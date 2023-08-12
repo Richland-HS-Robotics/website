@@ -28,9 +28,7 @@
 		});
 
 	// Menu.
-		$('#menu')
-			.append('<a href="#menu" class="close"></a>')
-			.appendTo($body)
+    	$('#menu')
 			.panel({
 				target: $body,
 				visibleClass: 'is-menu-visible',
