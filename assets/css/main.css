@@ -2911,13 +2911,17 @@ body.is-menu-visible #menu {
 
 
 
-.contact::before{
+.contact>li::before{
   font-size: 3.5em;
   width: 1em;
   float:left;
   margin-right: 0.5em;
 }
 
-.contact{
+.contact>li{
   margin-bottom: 2em;
+}
+
+.contact{
+  list-style-type: none;
 }
