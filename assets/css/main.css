@@ -2910,12 +2910,14 @@ body.is-menu-visible #menu {
 }
 
 
-.contact span{
-  position:absolute;
-  /* right: 1rem; */
-  font-size: 2rem;
+
+.contact::before{
+  font-size: 3.5em;
+  width: 1em;
+  float:left;
+  margin-right: 0.5em;
 }
 
-.contact :before{
-  font-size: 50px;
+.contact{
+  margin-bottom: 2em;
 }
