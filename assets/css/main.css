@@ -2560,8 +2560,8 @@ body {
 #heading {
   -ms-flex-align: center;
   -ms-flex-pack: center;
-  background-color: #111111;
-  color: rgba(255, 255, 255, 0.5);
+  /* background-color: #111111; */
+  /* color: rgba(255, 255, 255, 0.5); */
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -2574,7 +2574,9 @@ body {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/banner.jpg");
+  /* background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/banner.jpg"); */
+  /* background: linear-gradient(135deg, #008400 0%, #f7d600 74%); */
+  background: linear-gradient(135deg, #008400 20%, #f7d600 74%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
