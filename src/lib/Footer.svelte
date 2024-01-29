@@ -1,14 +1,13 @@
 
+<script>
+ import '@fortawesome/fontawesome-free/css/all.min.css';
+</script>
+
 <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <div class="content">
-                <!-- <section> -->
-                <!-- 	<h3>Accumsan montes viverra</h3> -->
-                <!-- 	<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p> -->
-                <!-- </section> -->
                 <section>
-                    <!-- <h4>Sem turpis amet semper</h4> -->
                     <ul class="alt">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -19,13 +18,10 @@
                 <section>
                     <!-- <h4>Links</h4> -->
                     <ul class="plain">
-                        <li><a href="mailto:contact@rhs-robotics.com"><i class="icon fa-envelope">&nbsp;</i>&nbsp;contact@rhs&#8209;robotics.com</a></li>
-                        <li><a href="https://www.instagram.com/richlandrobotics/"><i class="icon fa-instagram">&nbsp;</i>@richlandrobotics
-                        </a></li>
-                        <li><a href="https://github.com/Richland-HS-Robotics"><i class="icon fa-github">&nbsp;</i>Richland-HS-Robotics</a></li>
-                        <!-- <li><a href=""><i class="icon fa-envelope-o">&nbsp;</i>EmailTODO</a></li> -->
-                        <li>
-<a href="https://goo.gl/maps/rfdSa5RVQFdTAzDY7"><i class="icon fa-map-marker">&nbsp;</i>930 Long Ave, Room 1070, Richland, WA 99352</a>
+                        <li><a href="mailto:contact@rhs-robotics.com"><i class="icon fa-regular fa-envelope">&nbsp;</i>&nbsp;contact@rhs&#8209;robotics.com</a></li>
+                        <li><a href="https://www.instagram.com/richlandrobotics/"><i class="icon fa-brands fa-instagram">&nbsp;</i>@richlandrobotics </a></li>
+                        <li><a href="https://github.com/Richland-HS-Robotics"><i class="icon fa-brands fa-github">&nbsp;</i>Richland-HS-Robotics</a></li>
+                        <li><a href="https://goo.gl/maps/rfdSa5RVQFdTAzDY7"><i class="icon fa-solid fa-location-dot">&nbsp;</i>930 Long Ave, Room 1070, Richland, WA 99352</a>
                     </ul>
                 </section>
             </div>
