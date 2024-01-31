@@ -1,32 +1,32 @@
 
+<script>
+ export let roles = ["GenericRole"];
+ export let name = "GenericPerson";
+ export let src = "favicon.png";
+ export let reversed = false;
+</script>
+
 
 <div id="container">
-
-    <!-- <img src="%sveltekit.assets%/nathan-portrait.jpg"> -->
-    <img src="nathan-portrait.jpg">
+    {#if !reversed}
+        <img {src} />
+    {/if}
     <div>
         <div id="header" class="p">
-            <h3>Nathan </h3>
+            <h3>{name}</h3>
             <div>
-                <span>President</span>
-                <span>CAD</span>
-                <span>Design</span>
+                {#each roles as role}
+                    <span>{role}</span>
+                {/each}
             </div>
         </div>
         <p class="p">
-            I love robotics. In middle school, I joined FLL and I continued in the
-            First program with FTC once I reached high school. Through my time in
-            robotics, I’ve developed many skills. I’ve learned to more effectively
-            communicate and cooperate with teammates, utilizing all their different
-            skills and talents. I’ve learned how to compete and excel during
-            competitions while respecting and even helping opponents. I’ve gained
-            mechanical abilities. Designing and building many robots over the years
-            has helped me understand critical components to make designs proficient.
-            I have also learned to use new tools like CAD to design custom parts and
-            3D printers to fabricate the parts. Robotics has helped me gain many
-            valuable skills and I’ve loved all the opportunities it has provided me.
+            <slot />
         </p>
     </div>
+    {#if reversed}
+        <img {src} />
+    {/if}
 </div>
 
 
