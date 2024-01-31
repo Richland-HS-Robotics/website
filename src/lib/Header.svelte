@@ -2,7 +2,7 @@
 
 <header id="header">
 
-    <a id="logo" href="index.html">RHS Robotics</a>
+    <a id="logo" href="/">RHS Robotics</a>
     <nav class="navbar-container">
 
         <div id="menu">
@@ -33,7 +33,7 @@
      justify-content: space-between;
      background: #111111;
      color: rgba(255, 255, 255, 0.5);
-     position: fixed;
+     position: sticky;
      height: 3.25rem;
      left:0;
      top: 0;

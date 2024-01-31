@@ -2,21 +2,29 @@
  import Header from "$lib/Header.svelte";
  import Footer from "$lib/Footer.svelte";
  import CarouselSection from "$lib/CarouselSection.svelte";
+ import Banner from "$lib/Banner.svelte";
 
  let count = 0;
 </script>
 
 
-<Header/>
 
+
+<Banner />
 
 <div id="main">
+    <h2>A heading</h2>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    A headingA heading<br/>
+
 
     <CarouselSection />
 
 </div>
 
-<Footer/>
 
 
 <style>
