@@ -58,6 +58,7 @@
  section h1{
      font-size: 4rem;
      margin-bottom: 1rem;
-     color: #ffffff;
+     color: #9590A8;
+     /*Cool Gray (text)*/
  }
 </style>

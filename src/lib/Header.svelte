@@ -25,14 +25,19 @@
 <style>
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 
+
+
  header{
+
+   
+
 
      font-family: "Raleway", Arial, Helvetica, sans-serif;
      align-items: center;
      display: flex;
      justify-content: space-between;
-     background: #111111;
-     color: rgba(255, 255, 255, 0.5);
+     background: #211C1E;
+     color: #DDDDE3;
      position: sticky;
      height: 3.25rem;
      left:0;
@@ -51,7 +56,8 @@
  }
 
  li, a{
-     color: inherit;
+     color: #DDDDE3;
+     /* Platinum Text color*/
      text-decoration: none;
      list-style-type: none;
      position: static;
@@ -67,7 +73,7 @@
 
 
 #logo {
-    color: #ffffff;
+    color: #025D03;
     font-size: 1rem;
     font-weight: 600;
     height: inherit;
