@@ -40,10 +40,11 @@
      padding: 1.5em;
      border-radius: 1.5em 1.5em;
 
-     background-color: #ffff4d;
+     background-color: #F4F4F6;
 
      /* border: solid 2px black; */
-     box-shadow: 10px 10px grey;
+     box-shadow: 5px 5px 5px #C7C7D1;
+     /*Shadow Color C7C7D1*/
  }
 
  #header{
@@ -70,10 +71,11 @@
 
  span{
      font-size: 1.3em;
-     background-color: #4d79ff;
+     background-color: #A2C5AC;
      padding: 0.2em;
      border-radius: 0.4em 0.4em;
      margin-left: 0.1em;
      margin-right: 0.1em;
+     box-shadow: 3px 3px 3px #53A274;
  }
 </style>
