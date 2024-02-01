@@ -191,10 +191,12 @@
       #footer .content section:last-child {
         width: 30%;
         padding-left: 4rem; }
-  #footer .copyright {
+  .copyright {
     border-top: 1px solid;
+    background-color: #111111;
+    color: #9590a8;
     font-size: 0.8rem;
-    opacity: 0.5;
+    opacity: 1;
     padding: 2rem 0;
     text-align: center; }
   @media screen and (max-width: 1280px) {
