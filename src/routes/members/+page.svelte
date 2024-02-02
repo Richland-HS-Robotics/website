@@ -1,6 +1,11 @@
 
 <script>
  import Bio from "$lib/Bio.svelte";
+
+
+
+
+
 </script>
 
 
@@ -25,7 +30,6 @@
         I have also learned to use new tools like CAD to design custom parts and
         3D printers to fabricate the parts. Robotics has helped me gain many
         valuable skills and I’ve loved all the opportunities it has provided me.
-
     </Bio>
 
     <br/>
