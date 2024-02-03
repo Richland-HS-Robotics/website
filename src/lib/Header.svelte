@@ -1,92 +1,20 @@
-
-
 <header id="header">
+  <a id="logo" href="/">RHS Robotics</a>
+  <nav class="navbar-container">
+    <div id="menu">
+      <ul class="links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="robots.html">Robots</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+      <a href="#menu" class="close"></a>
+    </div>
+  </nav>
 
-    <a id="logo" href="/">RHS Robotics</a>
-    <nav class="navbar-container">
-
-        <div id="menu">
-            <ul class="links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="robots.html">Robots</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
-            </ul>
-            <a href="#menu" class="close"></a>
-        </div>
-    </nav>
-
-
-    <nav>
-        <a href="#menu">Menu</a>
-    </nav>
+  <nav>
+    <a href="#menu">Menu</a>
+  </nav>
 </header>
-
-
-<style>
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
-
-
-
- header{
-
-   
-
-
-     font-family: "Raleway", Arial, Helvetica, sans-serif;
-     align-items: center;
-     display: flex;
-     justify-content: space-between;
-     background: #211C1E;
-     color: #DDDDE3;
-     position: sticky;
-     height: 3.25rem;
-     left:0;
-     top: 0;
-     width: 100%;
-     line-height: 3.25rem;
-     z-index: 10001;
- }
-
- ul{
-     display: flex;
-     flex-direction: row;
-     overflow: hidden;
-     margin-bottom: 0;
-
- }
-
- li, a{
-     color: #DDDDE3;
-     /* Platinum Text color*/
-     text-decoration: none;
-     list-style-type: none;
-     position: static;
-     padding-left: 0;
-     padding-right: 0;
-
- }
-
- li > a{
-     margin-left: 1em;
-     margin-right: 1em;
- }
-
-
-#logo {
-    color: #025D03;
-    font-size: 1rem;
-    font-weight: 600;
-    height: inherit;
-    line-height: inherit;
-    padding: 0 1.25rem;
-    text-decoration: none;
-}
-
-
-</style>
-
-
-
 
 <!-- <style>
      #header {
@@ -196,3 +124,56 @@
      }
 
      </style> -->
+
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+
+  header {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: #211c1e;
+    color: #dddde3;
+    position: sticky;
+    height: 3.25rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    line-height: 3.25rem;
+    z-index: 10001;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  li,
+  a {
+    color: #dddde3;
+    /* Platinum Text color*/
+    text-decoration: none;
+    list-style-type: none;
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  li > a {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #logo {
+    color: #025d03;
+    font-size: 1rem;
+    font-weight: 600;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 1.25rem;
+    text-decoration: none;
+  }
+</style>
