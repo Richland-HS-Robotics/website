@@ -21,9 +21,12 @@
     A headingA heading<br/>
 
 
+
     <CarouselSection />
 
 </div>
+<FAQ />
+
 
 
 
