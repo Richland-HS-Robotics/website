@@ -74,7 +74,7 @@
 }
 .logo-container {
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 .burger-menu {
     display: none;
@@ -119,7 +119,7 @@
 <header>
 <div class="navigation {showMenu ? 'show-menu' : ''}">
     <div class="logo-container">
-        <a class="logo-text" href="your-link.html">
+        <a class="logo-text" href="/">
             <img class="logo" src="logo_gear.svg" alt="Logo">
             <span class="rhs">RHS</span>
             <span class="robotics">ROBOTICS</span>

@@ -48,10 +48,22 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.left, .right { /* Add this class */
+
+.left, .right {
   display: flex;
   align-items: center;
   padding-right: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+.copyright{
+  transform: translateY(30px);
+}
+.contact{
+  text-align: left !important;
+  transform: translateX(-1000px);
+  margin-left: 30px;
+}
 }
 
 </style>
