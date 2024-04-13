@@ -1,33 +1,44 @@
-    <style>
-        .faq-question {
-            cursor: pointer;
-            padding: 10px;
-            border: 1px solid #000;
-            width: 300px;
-            margin-bottom: 10px;
-        }
+<script>
+    let faqs = [
+        { question: 'Question 1', answer: 'Answer 1' },
+        { question: 'Question 2', answer: 'Answer 2' },
+        // Add more FAQs as needed
+    ];
+    let openIndex = null;
 
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-            border: 1px solid #000;
-            width: 300px;
-            padding: 10px;
+    function toggleAnswer(index) {
+        if (openIndex === index) {
+            openIndex = null;
+        } else {
+            openIndex = index;
         }
-    </style>
-<div>    
-    <div class="faq-question" onclick="document.getElementById('answer1').style.maxHeight = document.getElementById('answer1').style.maxHeight ? null : '100px'">
-        Question 1
-    </div>
-    <div id="answer1" class="faq-answer">
-        Answer 1
-    </div>
+    }
+</script>
 
-    <div class="faq-question" onclick="document.getElementById('answer2').style.maxHeight = document.getElementById('answer2').style.maxHeight ? null : '100px'">
-        Question 2
+<style>
+    .faq {
+        width: 300px;
+        border: 1px solid #000;
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background-color: #f9f9f9;
+    }
+    .answer {
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        max-height: 0;
+    }
+    .answer.open {
+        max-height: 100px;
+    }
+</style>
+
+{#each faqs as { question, answer }, index}
+    <div class="faq" on:click={() => toggleAnswer(index)}>
+        {question}
+        <div class="answer {openIndex === index ? 'open' : ''}">
+            {answer}
+        </div>
     </div>
-    <div id="answer2" class="faq-answer">
-        Answer 2
-    </div>
-</div>
+{/each}
