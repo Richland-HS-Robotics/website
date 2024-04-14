@@ -1,6 +1,6 @@
 
     <div class="image">
-<section id="about", class="about">
+<section id="about">
     <h1 class="header">Empowering Students Through Robotics</h1>
 
     <p>
@@ -9,9 +9,9 @@
         competitions like the FIRST Tech Challenge. Our team fosters creativity,
         teamwork, and problem-solving skills in a fun and challenging
         environment. Join us to explore the world of robotics and unleash your
-        potential! 
+        potential!
     </p>
-    <a href="about.html", class="button">LEARN MORE!</a>
+    <a href="/", class="button">LEARN MORE!</a>
 </section>
 
     </div>
@@ -33,8 +33,9 @@ p{
     max-width: 50em;
     text-align: justify;
 }
-    .about{
-        margin-left: 15%;
+    #about{
+        margin-left: 33%;
+        /* margin: 0 auto; */
         color: black;
     }
     .header{

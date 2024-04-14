@@ -37,7 +37,7 @@
             <img src="robot.jpg" alt="robot", class="image">
             </div>
             </div>
-        <a href="about.html", class="button">VIEW ALL</a>
+        <a href="/", class="button">VIEW ALL</a>
     </section>
     
         </div>

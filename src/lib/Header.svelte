@@ -121,13 +121,13 @@
         </a>
     </div>
     <div>
-        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="about.html">ABOUT</a>
-        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="robots.html">ROBOTS</a>
-        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="events.html">EVENTS</a>
-        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="join-us.html">JOIN US</a>
-        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="contact.html">CONTACT</a>
-        <a class="button-donate {showMenu ? 'show-menu' : ''}" href="donate.html">♥ DONATE!</a>
-        <div class="burger-menu {showMenu ? 'open' : ''}" on:click={toggleMenu}> <i class="fa-sharp fa-solid fa-bars"></i></div>
+        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">ABOUT</a>
+        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">ROBOTS</a>
+        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">EVENTS</a>
+        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">JOIN US</a>
+        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">CONTACT</a>
+        <a class="button-donate {showMenu ? 'show-menu' : ''}" href="/">♥ DONATE!</a>
+        <button class="burger-menu {showMenu ? 'open' : ''}" on:click={toggleMenu} > <i class="fa-sharp fa-solid fa-bars"></i></button>
     </div>
 </div>
 </header>
