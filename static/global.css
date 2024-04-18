@@ -122,11 +122,6 @@ ul {
   list-style: none;
 }
 
-body {
-  background-color: #dddde3;
-  /* Platinum color */
-  color: #444444;
-}
 
 body,
 input,
@@ -298,7 +293,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #555555;
+  color: #000000;
 }
 
 blockquote {

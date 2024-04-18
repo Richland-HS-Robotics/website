@@ -46,10 +46,10 @@
     <style>
         :root{
         --rhs-green: #025D03;
-        --rhs-green-hover: #013d02;
-        --white-hover: #b1b1b1;
-        --menu: #333;
-        --menu-hover: #111;
+        --rhs-green-hover: #055202;
+        --white-hover: #f5f5f5;
+        --menu: #292929;
+        --menu-hover: #1f1f1f;
         --robotics-grey: #808080;
         --transition-duration: 0.5s;
     }
@@ -97,8 +97,11 @@
             font-weight: normal;
             border-radius: 0%;
             margin-bottom: 100px;
-        }
+            transition: transform 0.2s ease-in-out;
+}
+
         .button:hover{
+    transform: scale(1.03);
             color: var(--white-hover);
             background-color: var(--rhs-green-hover);
         }

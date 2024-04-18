@@ -8,10 +8,11 @@
 <style>
 :root{
     --rhs-green: #025D03;
-    --rhs-green-hover: #013d02;
-    --white-hover: #b1b1b1;
-    --menu: #333;
-    --menu-hover: #111;
+    --rhs-green-hover: #055202;
+    --rhs-donate: #025d03;
+    --white-hover: #f5f5f5;
+    --menu: #292929;
+    --menu-hover: #1f1f1f;
     --robotics-grey: #808080;
     --transition-duration: 0.5s;
 }
@@ -34,7 +35,6 @@
     text-decoration: none;
     color: white;
     font-size: 15px;
-    padding-left: 30px;
     display: inline-block;
 }
 .nav-text:hover{
@@ -45,7 +45,7 @@
     text-decoration: none;
     color: white;
     padding: 30px;
-    background-color: var(--rhs-green);
+    background-color: var(--rhs-donate);
     display: inline-block;
     transition: opacity var(--transition-duration);
 }
@@ -55,7 +55,7 @@
 }
 .logo {
     height: 50px;
-    vertical-align: middle;
+    vertical-align:top;
 }
 .rhs {
     color: var(--rhs-green);
@@ -70,6 +70,7 @@
 .logo-container {
     display: flex;
     align-items: left;
+    padding-left: 15%;
 }
 .burger-menu {
     display: none;
@@ -115,13 +116,13 @@
 <div class="navigation {showMenu ? 'show-menu' : ''}">
     <div class="logo-container">
         <a class="logo-text" href="/">
-            <img class="logo" src="logo_gear.svg" alt="Logo">
+            <img class="logo" src="logo_dark.png" alt="Logo">
             <span class="rhs">RHS</span>
             <span class="robotics">ROBOTICS</span>
         </a>
     </div>
     <div>
-        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">ABOUT</a>
+        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/about">ABOUT</a>
         <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">ROBOTS</a>
         <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">EVENTS</a>
         <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">JOIN US</a>
