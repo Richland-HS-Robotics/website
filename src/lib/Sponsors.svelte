@@ -29,7 +29,7 @@
     transition: transform 0.2s ease-in-out;
 }
 .logos:hover{
-    transform: scale(0.95,0.95);
+    transform: scale(1.03);
 }
 .sponsors{
     background-color: white;

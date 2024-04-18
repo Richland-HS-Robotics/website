@@ -34,7 +34,7 @@ p{
     text-align: justify;
 }
     #about{
-        margin-left: 33%;
+        margin-left: 15%;
         /* margin: 0 auto; */
         color: black;
     }
@@ -58,8 +58,10 @@ p{
         font-weight: normal;
         border-radius: 0%;
         margin-bottom: 100px;
-    }
+    transition: transform 0.2s ease-in-out;
+}
     .button:hover{
+    transform: scale(1.03);
         color: var(--white-hover);
         background-color: var(--rhs-green-hover);
     }

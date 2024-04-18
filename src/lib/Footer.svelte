@@ -36,9 +36,11 @@
   margin-left: 20px;
   margin-right: 20px;
   font-size: 30px;
+    transition: transform 0.2s ease-in-out;
 }
 .contact:hover{
   color: #f5f5f5;
+    transform: scale(1.05);
 }
 .footer{
   padding-left: 15%;

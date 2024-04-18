@@ -97,8 +97,11 @@
             font-weight: normal;
             border-radius: 0%;
             margin-bottom: 100px;
-        }
+            transition: transform 0.2s ease-in-out;
+}
+
         .button:hover{
+    transform: scale(1.03);
             color: var(--white-hover);
             background-color: var(--rhs-green-hover);
         }

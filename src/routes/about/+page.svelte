@@ -158,6 +158,7 @@
       grid-template-columns: auto auto;
       gap: 3em;
       background-color: white;
+      padding-bottom: 100px;
     }
     .about-background{
         background-image: url(gears_background.jpg);
