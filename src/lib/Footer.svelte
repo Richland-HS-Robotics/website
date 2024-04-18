@@ -22,29 +22,29 @@
 
 <style>
   .copyright{
-  padding-left: 5%;
   text-align: left !important;
   color: white;
-  background-color: #333;
+  background-color: #292929;
   text-decoration: none;
   padding-right: 30px;
   white-space: nowrap;
 }  
 .contact{
   text-decoration: none;
-  background-color: #333;
+  background-color: #292929;
   color: white;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 30px;
 }
 .contact:hover{
-  color: #b1b1b1;
+  color: #f5f5f5;
 }
 .footer{
+  padding-left: 15%;
   display: flex; /* Add this line */
   justify-content: space-between; /* Add this line */
-  background-color: #333;
+  background-color: #292929;
   padding-top: 30px;
   padding-bottom: 30px;
 }

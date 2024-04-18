@@ -11,6 +11,7 @@
  import Video from "../lib/Video.svelte";
  import About from "../lib/About.svelte";
     import Robots from "../lib/Robots.svelte";
+import Sponsors from "../lib/Sponsors.svelte";
 
 
  let count = 0;
@@ -27,6 +28,7 @@
 
     <FTC />
     <Robots />
+    <Sponsors />
 </div>
 
 
