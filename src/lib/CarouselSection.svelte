@@ -25,7 +25,7 @@
             <img src="https://picsum.photos/seed/{index + 1}/1920/1080" alt="A placeholder image" />
         {/each}
 
-        <div slot="next" let:showNextPage on:click={showNextPage} class="custom-arrow custom-arrow-next">
+        <div slot="next" let:showNextPage on:click={showNextPage} class="custom-arrow custom-arrow-next" role="button" on:keydown={showNextPage} tabindex="0">
             <i />
         </div>
 
