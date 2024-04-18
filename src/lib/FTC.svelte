@@ -31,7 +31,7 @@ against other teams.
         text-align: justify;
     }
         .about{
-            padding-left: 15%;
+            padding-left: 33%;
             color: white;
             background-color: var(--menu);
             padding-bottom: 50px;

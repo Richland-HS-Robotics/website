@@ -74,7 +74,7 @@
         color: black;
     }
         .about{
-            margin-left: 15%;
+            margin-left: 33%;
             color: black;
         }
         .header{
