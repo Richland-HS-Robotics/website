@@ -18,23 +18,12 @@
 
 
 <style>
-    :root{
-    --rhs-green: #025D03;
-    --rhs-green-hover: #055202;
-    --white-hover: #f5f5f5;
-    --menu: #292929;
-    --menu-hover: #1f1f1f;
-    --robotics-grey: #808080;
-    --transition-duration: 0.5s;
-}
-
-
 p{
     max-width: 50em;
     text-align: justify;
 }
     #about{
-        margin-left: 15%;
+        margin-left: var(--left-margin);
         /* margin: 0 auto; */
         color: black;
     }

@@ -15,15 +15,7 @@ against other teams.
     
     
     <style>
-        :root{
-        --rhs-green: #025D03;
-        --rhs-green-hover: #055202;
-        --white-hover: #f5f5f5;
-        --menu: #292929;
-        --menu-hover: #1f1f1f;
-        --robotics-grey: #808080;
-        --transition-duration: 0.5s;
-    }
+
     
     
     p{
@@ -31,7 +23,7 @@ against other teams.
         text-align: justify;
     }
         .about{
-            padding-left: 33%;
+            padding-left: var(--left-margin);
             color: white;
             background-color: var(--menu);
             padding-bottom: 50px;

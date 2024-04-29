@@ -6,16 +6,6 @@
 </script>
 
 <style>
-:root{
-    --rhs-green: #025D03;
-    --rhs-green-hover: #055202;
-    --rhs-donate: #025d03;
-    --white-hover: #f5f5f5;
-    --menu: #292929;
-    --menu-hover: #1f1f1f;
-    --robotics-grey: #808080;
-    --transition-duration: 0.5s;
-}
 .navigation{
     background-color: var(--menu);
     display: flex;
@@ -45,7 +35,7 @@
     text-decoration: none;
     color: white;
     padding: 30px;
-    background-color: var(--rhs-donate);
+    background-color: var(--rhs-green);
     display: inline-block;
     transition: opacity var(--transition-duration);
 }
@@ -70,7 +60,7 @@
 .logo-container {
     display: flex;
     align-items: left;
-    padding-left: 15%;
+    padding-left: var(--left-margin);
 }
 .burger-menu {
     display: none;
@@ -126,7 +116,7 @@
         <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">ROBOTS</a>
         <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">EVENTS</a>
         <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">JOIN US</a>
-        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/">CONTACT</a>
+        <a class="nav-text {showMenu ? 'show-menu' : ''}" href="/contact">CONTACT</a>
         <a class="button-donate {showMenu ? 'show-menu' : ''}" href="/">♥ DONATE!</a>
         <button class="burger-menu {showMenu ? 'open' : ''}" on:click={toggleMenu} > <i class="fa-sharp fa-solid fa-bars"></i></button>
     </div>

@@ -43,7 +43,7 @@
     transform: scale(1.05);
 }
 .footer{
-  padding-left: 15%;
+  padding-left: var(--left-margin);
   display: flex; /* Add this line */
   justify-content: space-between; /* Add this line */
   background-color: #292929;

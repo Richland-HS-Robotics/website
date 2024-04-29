@@ -11,21 +11,20 @@
     <img src="openai.png" alt="OpenAI" class="logos">
     </a>
 </div>
-    <a href="/contact.html" class="contact">Interested in sponsoring us? Contact us!</a>
+    <a href="/contact" class="contact">Interested in sponsoring us? Contact us!</a>
 </div>
 
 <style>
 .image-containers{
     background-color: white;
     columns: 3;
-    padding-right: 30%;
+    padding-right: 0%;
 }
 .logos{
     height: 45px;
     width: auto;
     padding-top: 30px;
     padding-bottom: 15px;
-    text-align: justify;
     transition: transform 0.2s ease-in-out;
 }
 .logos:hover{
@@ -35,8 +34,10 @@
     background-color: white;
     color: black;
     padding-top: 100px;
-    padding-left: 15%;
+    padding-left: var(--left-margin);
     padding-bottom: 45px;
+    text-align: justify;
+    max-width: 50em;
 }
 .contact{
     color: grey;
