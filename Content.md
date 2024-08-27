@@ -12,20 +12,15 @@ Purpose of homepage.
 Purpose of website: Recruiting new students for members, for potential sponsors, and information.
 
 # Site Map:
+- Home page
+- About us page
+- Robots page
+- Members page
+- Join us page
 
-* Home page
+# Home Page:
 
-* About us page
-
-* Robots page
-
-* Members page
-
-* Join us page
-
-## Home Page:
-
-# Welcome to Richland High School Robotics
+## Welcome to Richland High School Robotics
 
 
 
