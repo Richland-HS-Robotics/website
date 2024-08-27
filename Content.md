@@ -32,6 +32,10 @@ We design, build, program, and compete robots in the FTC competition.
 
 [Team Picture] <!-- Will need new shirts for this -->
 
+### Sponsors
+
+
+
 ### Contact Us
 
 Shoot us an email at <mailto:contact@rhs-robotics.com>.
