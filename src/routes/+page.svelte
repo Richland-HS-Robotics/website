@@ -18,7 +18,7 @@
  <!-- <Banner /> -->
 
 <div id="main">
-<Welcome />
+    <Welcome />
     <About />
 
 

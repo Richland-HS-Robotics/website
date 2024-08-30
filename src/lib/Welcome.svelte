@@ -45,7 +45,7 @@
         width: 100%;
         z-index: 0;
         display: flex;
-        margin-top: -70px;
+        margin-top: -100px;
     }
     h1 {
         color: var(--text-color);
