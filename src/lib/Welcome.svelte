@@ -13,7 +13,7 @@
         <button class="button">Learn more</button>
     </div>
     <div class="image">
-        <img src="Robot.png" alt="Our robot" class="robot" />
+        <img src="Robot_render.png" alt="Our robot" class="robot" />
     </div>
     <svg width="50vw" height="50vw">
   <circle cx="25vw" cy="25vw" r="25vw" fill="#4e5565" />
