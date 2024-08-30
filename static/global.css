@@ -356,7 +356,8 @@ button,
   text-decoration: none;
   white-space: nowrap;
   font-size: 20px;
-  background-color: var(--yellow);
+  background: linear-gradient(0deg, hsl(42 100% 50%), var(--yellow));
+  box-shadow: 0 0 15px var(--yellow);
 }
 input[type="submit"].small,
 input[type="reset"].small,
