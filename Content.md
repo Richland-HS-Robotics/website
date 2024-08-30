@@ -38,7 +38,6 @@ We design, build, program, and compete robots in the FTC competition.
 ### Help us out
 We are always looking for more help.
 
-<!-- This would be an accordion menu -->
 
 If you are a...
 #### Student at Richland High School
