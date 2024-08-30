@@ -41,11 +41,10 @@
             linear-gradient(to top right, #1c1c1c, rgba(32, 33, 36, 0), #4e5565)
                 rgb(32, 33, 36);*/
         background-color: var(--bg-color);
-        position: relative;
         width: 100%;
         z-index: 0;
         display: flex;
-        margin-top: -100px;
+        margin-top: -70px;
     }
     h1 {
         color: var(--text-color);

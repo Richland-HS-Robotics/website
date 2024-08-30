@@ -23,7 +23,6 @@
 
 <style>
   .copyright{
-  text-align: left;
   color: var(--text-color);
   background-color: var(--bg-color);
   text-decoration: none;
@@ -31,14 +30,13 @@
     /* white-space: nowrap; */
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  text-align: center;
 }  
 .contact{
   text-decoration: none;
   background-color: var(--bg-color);
   color: var(--text-color);
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   font-size: 25px;
     transition: transform 0.2s ease-in-out;
 }
@@ -46,19 +44,36 @@
   color: var(--text-color-hover);
 }
 #footer{
-  padding-left: 5vw;
   display: flex; /* Add this line */
-  justify-content: space-around; /* Add this line */
   background-color: var(--bg-color);
   padding-top: 30px;
   padding-bottom: 30px;
-  flex-wrap: wrap;
 }
 
-.left, .right {
+.left {
   display: flex;
-  align-items: center;
-  padding-right: 5vw;
+  width: 70%;
+  margin-left: 5vw;
+}
+.right{
+  width: 30vw;
+  text-align: right;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .left{
+    width: 95%;
+  }
+  .right{
+    width: 95%;
+    text-align: left;
+    padding-top: 15px;
+    margin-left: 3vw;
+  }
+  #footer{
+    flex-direction: column;
+  }
 }
 
  /* @media screen and (max-width: 1200px) {

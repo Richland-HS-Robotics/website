@@ -2,12 +2,12 @@
     header{
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: rgba(255,255,255,0);
-        z-index: 1;
+        background-color: var(--bg-color);
+        z-index: 0;
         display: flex;
         position: relative;
-        margin-left: 5vw;
-        margin-right: 5vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
         justify-content: space-between;
         overflow: hidden;
     }
