@@ -9,6 +9,7 @@
  import CarouselSection from "$lib/CarouselSection.svelte";
  import Welcome from "../lib/Welcome.svelte";
  import About from "../lib/AboutHome.svelte";
+ import Tabs from "../lib/Tabs.svelte";
 
  let count = 0;
  </script>
@@ -21,5 +22,7 @@
     <Welcome />
     <About />
 
+
+    <Tabs />
 
 </div>
