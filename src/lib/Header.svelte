@@ -43,6 +43,16 @@
         color: var(--text-color);
         display: none;
     }
+    .burger-menu #sidebar-menu{
+        visibility: hidden;
+        text-rendering: geometricPrecision;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 200px;
+        height: 100%;
+        transition: 0.3s;
+    }
     @media only screen and (max-width: 768px) {
         .text{
             display: none;
@@ -50,6 +60,39 @@
         .burger-menu{
             display: flex;
         }
+    }
+    #burger-input{
+        display: none !important;
+    }
+
+    #burger-input:checked + .burger-menu #sidebar-menu{
+        visibility: visible;
+        right: 0;
+    }
+    #burger-input:checked ~ .overlay{
+        visibility: visible;
+        opacity: 0.6;
+    }
+    .burger-menu::before{
+        display:none;
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .35s, visibility .35s, height .35s;
+        overflow: hidden;
+        background: black;
+        z-index: -1;
+    }
+
+    #sidebar-menu ul li{
+        color: var(--text-color);
+        list-style-type: none;
     }
 </style>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -64,7 +107,20 @@
         <a href="/" class="text">Robots</a>
         <a href="/" class="text">Join us</a>
     </div>
-    <div class="burger-menu">
-        &#9776;
-    </div>
+    <input type="checkbox" id="burger-input" class="burger-shower">
+    <label class="burger-menu" for="burger-input">
+    &#9776;
+        <nav id="sidebar-menu">
+            <!-- <h2>Menu</h2> -->
+
+            <ul>
+                <li>Home</li>
+                <li>Members</li>
+                <li>Robots</li>
+                <li>Join us</li>
+            </ul>
+        </nav>
+    </label>
+
+    <div class="overlay"></div>
 </header>
