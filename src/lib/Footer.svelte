@@ -3,6 +3,7 @@
  import '@fortawesome/fontawesome-free/css/all.min.css';
 </script>
 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <footer id="footer", class="footer">
   <!-- svelte-ignore a11y-missing-attribute -->
   <div class="left"> <!-- Add this div -->
@@ -23,30 +24,31 @@
 <style>
   .copyright{
   text-align: left !important;
-  color: white;
-  background-color: #292929;
+  color: var(--text-color);
+  background-color: var(--bg-color);
   text-decoration: none;
   padding-right: 30px;
   white-space: nowrap;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }  
 .contact{
   text-decoration: none;
-  background-color: #292929;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 30px;
+  font-size: 25px;
     transition: transform 0.2s ease-in-out;
 }
 .contact:hover{
-  color: #f5f5f5;
-    transform: scale(1.05);
+  color: var(--text-color-hover);
 }
 .footer{
-  padding-left: var(--left-margin);
+  padding-left: 5vw;
   display: flex; /* Add this line */
   justify-content: space-between; /* Add this line */
-  background-color: #292929;
+  background-color: var(--bg-color);
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -54,7 +56,7 @@
 .left, .right {
   display: flex;
   align-items: center;
-  padding-right: 5%;
+  padding-right: 5vw;
 }
 
 @media screen and (max-width: 1200px) {

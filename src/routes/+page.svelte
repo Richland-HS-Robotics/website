@@ -8,8 +8,8 @@
  import Footer from "$lib/Footer.svelte";
  import CarouselSection from "$lib/CarouselSection.svelte";
  import FTC from "$lib/FTC.svelte";
- import Video from "../lib/Video.svelte";
- import About from "../lib/About.svelte";
+ import Welcome from "../lib/Welcome.svelte";
+ import About from "../lib/AboutHome.svelte";
     import Robots from "../lib/Robots.svelte";
 import Sponsors from "../lib/Sponsors.svelte";
 
@@ -22,7 +22,7 @@ import Sponsors from "../lib/Sponsors.svelte";
  <!-- <Banner /> -->
 
 <div id="main">
-<Video />
+<Welcome />
     <About />
 
 
