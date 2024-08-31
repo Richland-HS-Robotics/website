@@ -9,10 +9,10 @@
         &#9776;
         <nav id="sidebar-menu">
             <ul>
-                <li>Home</li>
-                <li>Members</li>
-                <li>Robots</li>
-                <li>Join us</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/">Robots</a></li>
+                <li><a href="/contact">Contact</a> us</li>
             </ul>
         </nav>
     </label>
@@ -22,10 +22,9 @@
             <img src="logos/Logo_C_Dark_Horiz.svg" alt="logo" class="logo" id="logo-big" />
         </a>
     <div class="div-links">
-        <a href="/" class="text">About us</a>
-        <a href="/" class="text">Members</a>
+        <a href="/about" class="text">About Us</a>
         <a href="/" class="text">Robots</a>
-        <a href="/" class="text">Join us</a>
+        <a href="/contact" class="text">Contact</a>
     </div>
 
     <div class="overlay"></div>
