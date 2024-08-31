@@ -27,12 +27,13 @@
         background-color: var(--bg-color);
     }
     .box {
-        border: 2px solid var(--yellow);
+        border: 1px solid var(--yellow);
         border-radius: 7px;
         width: 90vw;
         background-color: var(--secondary-bg-color);
         color: var(--text-color);
         margin-left: 5vw;
+        box-shadow: 0 0 15px var(--secondary-bg-color);
     }
     ul {
         display: flex;

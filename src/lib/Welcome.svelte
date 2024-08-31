@@ -5,7 +5,7 @@
 
 <div class="gradient">
     <div class="text">
-        <h1>RHS Robotics</h1>
+        <h1>Richland Robotics</h1>
         <p>
             We design, build, program, and compete robots in the FTC
             competition.

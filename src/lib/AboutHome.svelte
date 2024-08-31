@@ -50,6 +50,7 @@
         background-color: var(--bg-color);
         width: 90%;
         border-radius: 7px;
+        box-shadow: 0 0 15px var(--secondary-bg-color);
     }
     @media only screen and (max-width: 768px) {
         .left {

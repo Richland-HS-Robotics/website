@@ -8,6 +8,7 @@
     import Tab2 from "../lib/Tab2.svelte";
     import Tab3 from "../lib/Tab3.svelte";
     import Tabs from "../lib/Tabs.svelte";
+    import Sponsors from "../lib/Sponsors.svelte";
 
     let count = 0;
 
@@ -28,6 +29,6 @@
 <div id="main">
     <Welcome />
     <About />
-
+    <Sponsors />
     <Tabs {items} />
 </div>
