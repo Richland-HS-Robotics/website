@@ -28,10 +28,12 @@
         width: 100%;
         display: flex;
         padding-top: 25px;
+        z-index: 0;
     }
     .left {
         width: 40vw;
         margin-left: 5vw;
+        z-index: 2;
     }
     h1 {
         color: var(--text-color);
@@ -42,6 +44,7 @@
     .right {
         width: 50%;
         margin-right: 5vw;
+        z-index: 2;
     }
     .image {
         background-color: var(--bg-color);

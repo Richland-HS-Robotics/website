@@ -16,16 +16,16 @@
         <img src="Robot_render.png" alt="Our robot" class="robot" />
     </div>
     <svg width="50vw" height="50vw">
-  <circle cx="25vw" cy="25vw" r="25vw" fill="#4e5565" />
-</svg>
+        <circle cx="25vw" cy="25vw" r="25vw" fill="#4e5565" />
+    </svg>
 </div>
 
 <style>
-    svg{
+    svg {
         position: absolute;
         top: -25px;
         left: 45vw;
-        z-index: 0;
+        z-index: 1;
         filter: blur(150px);
     }
     .text {
@@ -34,6 +34,7 @@
         color: var(--text-color);
         margin-left: 5vw;
         width: 40vw;
+        z-index: 2;
     }
     .gradient {
         /*background:
@@ -55,7 +56,7 @@
     .image {
         width: 60vw;
         margin-right: 5vw;
-        z-index: 1;
+        z-index: 2;
     }
     .robot {
         width: 100%;
