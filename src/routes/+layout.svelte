@@ -4,9 +4,20 @@
  import Footer from "$lib/Footer.svelte";
 </script>
 
-<Header/>
+<div class="box">
+    <Header class="row header" />
 
 
-<slot />
+    <div id="slot" class="row content">
+        <slot />
+    </div>
 
-<Footer/>
+    <Footer class="row footer" />
+</div>
+
+
+<style>
+ #slot{
+     margin-left: 5vw;
+ }
+</style>
