@@ -11,7 +11,7 @@
 <style>
     .bg {
         background-color: var(---bg-color);
-        padding-left: 5vw;
+        padding-left: 0;
     }
     .sponsors{
         height: 200px;

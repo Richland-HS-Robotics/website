@@ -35,11 +35,14 @@
   text-decoration: none;
   background-color: var(--bg-color);
   color: var(--text-color);
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 1em;
+  margin-right: 1em;
   font-size: 25px;
     transition: transform 0.2s ease-in-out;
 }
+.right a:last-child{
+  margin-right: 0;
+ }
 .contact:hover{
   color: var(--text-color-hover);
 }
@@ -56,10 +59,11 @@
   margin-left: 5vw;
 }
 .right{
-  width: 30vw;
   text-align: right;
   display: flex;
-}
+  margin-left: auto;
+  margin-right: 5vw;
+ }
 
 @media screen and (max-width: 768px) {
   .left{

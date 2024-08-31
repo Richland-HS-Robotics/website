@@ -42,7 +42,7 @@
             <p>
                 You can donate to us at our <a
                 href="https://secure.givelively.org/donate/washington-first-robotics/tyler-bartlett-3">Donation
-                Page</a> , or email us about it at <a
+                Page</a>, or email us about it at <a
                 href="mailto:contact@rhs-robotics.com">contact@rhs-robotics.com</a>
             </p>
             <p>

@@ -36,7 +36,7 @@
         width: 90vw;
         background-color: var(--secondary-bg-color);
         color: var(--text-color);
-        margin-left: 5vw;
+        margin-left: 0;
         box-shadow: 0 0 15px var(--secondary-bg-color);
     }
     ul {
@@ -44,7 +44,7 @@
         flex-wrap: wrap;
         padding-left: 0;
         margin-bottom: 20px;
-        margin-left: calc(5vw - 10px);
+        margin-left: -15px;
         list-style: none;
         padding-top: 20px;
     }

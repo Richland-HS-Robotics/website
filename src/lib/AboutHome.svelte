@@ -32,7 +32,7 @@
     }
     .left {
         width: 40vw;
-        margin-left: 5vw;
+        margin-left: 0;
         z-index: 2;
     }
     h1 {
@@ -63,7 +63,7 @@
         }
         .right {
             width: 90vw;
-            margin-left: 5vw;
+            margin-left: 0;
             margin-right: 0;
             order: 0;
         }

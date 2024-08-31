@@ -32,7 +32,7 @@
         padding-top: 150px;
         font-family: "Open Sans", sans-serif;
         color: var(--text-color);
-        margin-left: 5vw;
+        margin-left: 0;
         width: 40vw;
         z-index: 2;
     }
@@ -65,7 +65,7 @@
     @media only screen and (max-width: 768px) {
         .image {
             width: 90vw;
-            margin-left: 5vw;
+            margin-left: 0;
         }
         .text {
             width: 90vw;
