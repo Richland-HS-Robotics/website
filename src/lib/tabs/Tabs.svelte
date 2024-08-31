@@ -13,13 +13,17 @@
             </li>
         {/each}
     </ul>
-    {#each items as item}
-        {#if activeTabValue == item.value}
-            <div class="box">
-                <svelte:component this={item.component} />
-            </div>
-        {/if}
-    {/each}
+
+
+    {#if activeTabValue == 1}
+        <div class="box"> <slot name="body1"></slot> </div>
+    {/if}
+    {#if activeTabValue == 2}
+        <div class="box"> <slot name="body2"></slot> </div>
+    {/if}
+    {#if activeTabValue == 3}
+        <div class="box"> <slot name="body3"></slot> </div>
+    {/if}
 </div>
 
 <style>

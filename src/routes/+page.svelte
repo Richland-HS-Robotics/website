@@ -4,17 +4,14 @@
     import CarouselSection from "$lib/CarouselSection.svelte";
     import Welcome from "../lib/Welcome.svelte";
     import About from "../lib/AboutHome.svelte";
-    import Tab1 from "../lib/Tab1.svelte";
-    import Tab2 from "../lib/Tab2.svelte";
-    import Tab3 from "../lib/Tab3.svelte";
-    import Tabs from "../lib/Tabs.svelte";
+    import Tabs from "../lib/tabs/Tabs.svelte";
 
     let count = 0;
 
     let items = [
-        { label: "Content", value: 1, component: Tab1 },
-        { label: "Interactions", value: 2, component: Tab2 },
-        { label: "Tab 3", value: 3, component: Tab3 },
+        { label: "Student", value: 1 },
+        { label: "Sponsor", value: 2 },
+        { label: "Coach", value: 3 },
     ];
 </script>
 
@@ -29,5 +26,43 @@
     <Welcome />
     <About />
 
-    <Tabs {items} />
+    <Tabs items={items} >
+        <div slot="body1">
+            <h2>Student at Richland High School</h2>
+
+
+            <p>Come to one of our club meetings, or attend one of our events.</p>
+        </div>
+
+        <div slot="body2">
+            <h2>Potential Sponsor</h2>
+
+            <p>
+                You can donate to us at our <a
+                href="https://secure.givelively.org/donate/washington-first-robotics/tyler-bartlett-3">Donation
+                Page</a> , or email us about it at <a
+                href="mailto:contact@rhs-robotics.com">contact@rhs-robotics.com</a>
+            </p>
+            <p>
+                Your donation would help us pay our team fees, buy necessary
+                robot parts, cover transportation costs, and be prepared for any
+                other unexpected costs.
+            </p>
+
+            <p>
+                To thank you we would love to put your name or logo on our
+                robot, robot cart, and portfolio.
+            </p>
+        </div>
+
+        <div slot="body3">
+            <h2>Potential Coach</h2>
+
+            <p>
+                We are always looking for more coaches and mentors. Contact us at
+                <a href="mailto:contact@rhs-robotics.com">contact@rhs-robotics.com</a>
+            </p>
+
+        </div>
+    </Tabs>
 </div>
