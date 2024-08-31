@@ -5,6 +5,7 @@
     import Welcome from "../lib/Welcome.svelte";
     import About from "../lib/AboutHome.svelte";
     import Tabs from "../lib/tabs/Tabs.svelte";
+    import Sponsors from "../lib/Sponsors.svelte";
 
     let count = 0;
 
@@ -26,6 +27,7 @@
     <Welcome />
     <About />
 
+    <Sponsors />
     <Tabs items={items} >
         <div slot="body1">
             <h2>Student at Richland High School</h2>

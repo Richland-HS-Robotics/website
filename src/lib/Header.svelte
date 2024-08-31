@@ -1,9 +1,40 @@
+<link
+    href="https://fonts.googleapis.com/css?family=Open+Sans"
+    rel="stylesheet"
+/>
+
+<header>
+    <input type="checkbox" id="burger-input" class="burger-shower" />
+    <label class="burger-menu" for="burger-input">
+        &#9776;
+        <nav id="sidebar-menu">
+            <ul>
+                <li>Home</li>
+                <li>Members</li>
+                <li>Robots</li>
+                <li>Join us</li>
+            </ul>
+        </nav>
+    </label>
+
+    <div class="div-logo">
+        <img src="logo_dark.png" alt="logo" class="logo" />
+    </div>
+    <div class="div-links">
+        <a href="/" class="text">About us</a>
+        <a href="/" class="text">Members</a>
+        <a href="/" class="text">Robots</a>
+        <a href="/" class="text">Join us</a>
+    </div>
+
+    <div class="overlay"></div>
+</header>
+
 <style>
-    header{
+    header {
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: var(--bg-color);
-        z-index: 0;
+        z-index: 10;
         display: flex;
         position: relative;
         padding-left: 5vw;
@@ -11,29 +42,31 @@
         justify-content: space-between;
         overflow: hidden;
     }
-    .logo{
+    .logo {
         width: 40px;
         height: 40px;
         text-align: left;
     }
-    .text{
+    .text {
         color: var(--text-color);
         text-decoration: none;
         font-size: 20px;
         margin-left: 10px;
         margin-right: 10px;
         transition: all ease-in 0.1s;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
     }
-    .text:hover{
+    .text:hover {
         color: var(--text-color-hover);
+        cursor: pointer;
     }
-    .div-links{
+    .div-links {
         display: flex;
         width: 60vw;
         justify-content: flex-end;
+        z-index: 3;
     }
-    .burger-menu{
+    .burger-menu {
         cursor: pointer;
         font-size: 24px;
         color: var(--text-color);
@@ -41,10 +74,10 @@
         padding-left: 0;
         /* margin-left: 5vw; */
     }
-    .burger-menu:hover{
+    .burger-menu:hover {
         color: var(--text-color-hover);
     }
-    .burger-menu #sidebar-menu{
+    .burger-menu #sidebar-menu {
         visibility: hidden;
         text-rendering: geometricPrecision;
         position: fixed;
@@ -56,29 +89,29 @@
         transition: 0.3s;
     }
     @media only screen and (max-width: 768px) {
-        .div-links{
+        .div-links {
             display: none;
         }
-        .burger-menu{
+        .burger-menu {
             display: flex;
         }
     }
-    #burger-input{
+    #burger-input {
         display: none !important;
     }
 
-    #burger-input:checked + .burger-menu #sidebar-menu{
+    #burger-input:checked + .burger-menu #sidebar-menu {
         visibility: visible;
         left: 0;
     }
-    #burger-input:checked ~ .overlay{
+    #burger-input:checked ~ .overlay {
         visibility: visible;
         opacity: 0.6;
     }
-    .burger-menu::before{
-        display:none;
+    .burger-menu::before {
+        display: none;
     }
-    .overlay{
+    .overlay {
         position: fixed;
         top: 0;
         left: 0;
@@ -86,51 +119,25 @@
         height: 100%;
         opacity: 0;
         visibility: hidden;
-        transition: opacity .35s, visibility .35s, height .35s;
+        transition:
+            opacity 0.35s,
+            visibility 0.35s,
+            height 0.35s;
         overflow: hidden;
         background: black;
         z-index: -1;
     }
 
-    #sidebar-menu ul li{
+    #sidebar-menu ul li {
         color: var(--text-color);
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
 
-    #sidebar-menu ul{
+    #sidebar-menu ul {
         padding: 0;
         margin-left: 5vw;
         margin-top: 2em;
     }
 </style>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-<header>
-    <input type="checkbox" id="burger-input" class="burger-shower">
-    <label class="burger-menu" for="burger-input">
-    &#9776;
-        <nav id="sidebar-menu">
-            <ul>
-                <li>Home</li>
-                <li>Members</li>
-                <li>Robots</li>
-                <li>Join us</li>
-            </ul>
-        </nav>
-    </label>
-
-
-    <div class="div-logo">
-        <img src="logo_dark.png" alt="logo" class="logo">
-    </div>
-    <div class="div-links">
-        <a href="/" class="text">About us</a>
-        <a href="/" class="text">Members</a>
-        <a href="/" class="text">Robots</a>
-        <a href="/" class="text">Join us</a>
-    </div>
-
-    <div class="overlay"></div>
-</header>
