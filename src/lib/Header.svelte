@@ -17,9 +17,10 @@
         </nav>
     </label>
 
-    <div class="div-logo">
-        <img src="logo_dark.png" alt="logo" class="logo" />
-    </div>
+        <a href="/" class="div-logo">
+            <img src="logos/Logo_C_Dark.svg" alt="logo" class="logo" id="logo-small" />
+            <img src="logos/Logo_C_Dark_Horiz.svg" alt="logo" class="logo" id="logo-big" />
+        </a>
     <div class="div-links">
         <a href="/" class="text">About us</a>
         <a href="/" class="text">Members</a>
@@ -43,7 +44,7 @@
         overflow: hidden;
     }
     .logo {
-        width: 40px;
+        /* width: 40px; */
         height: 40px;
         text-align: left;
     }
@@ -139,5 +140,20 @@
         padding: 0;
         margin-left: 5vw;
         margin-top: 2em;
+    }
+
+    #logo-small{
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #logo-small{
+            display: inline;
+        }
+
+        #logo-big{
+            display: none;
+        }
+
     }
 </style>
