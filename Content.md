@@ -143,3 +143,13 @@ academic and personal endeavors.
 - 9th place (quals)
 
 
+
+# Members
+- Calvin (Senior)
+- Tyler (Senior)
+- Fintin (Senior)
+- Emmett (Senior)
+- Ian (Senior)
+- Iain (Junior)
+- Henry (Sophmore)
+- Hailey
