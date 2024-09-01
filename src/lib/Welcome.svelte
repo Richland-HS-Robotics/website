@@ -7,10 +7,10 @@
     <div class="text">
         <h1>Richland Robotics</h1>
         <p>
-            We design, build, program, and compete robots in the FTC
-            competition.
+            We design, build, program, and compete robots for the
+            <a href="https://www.firstinspires.org/robotics/ftc"> <em>FIRST</em> Tech Challenge</a>.
         </p>
-        <button class="button">Learn more</button>
+        <!-- <button class="button">Learn more</button> -->
     </div>
     <div class="image">
         <img src="Robot_render.png" alt="Our robot" class="robot" />

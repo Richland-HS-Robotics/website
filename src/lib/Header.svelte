@@ -11,7 +11,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/">Robots</a></li>
+                <li><a href="/robots">Robots</a></li>
                 <li><a href="/contact">Contact</a> us</li>
             </ul>
         </nav>
@@ -23,7 +23,7 @@
         </a>
     <div class="div-links">
         <a href="/about" class="text">About Us</a>
-        <a href="/" class="text">Robots</a>
+        <a href="/robots" class="text">Robots</a>
         <a href="/contact" class="text">Contact</a>
     </div>
 
