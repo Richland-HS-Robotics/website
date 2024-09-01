@@ -1,192 +1,158 @@
-<header id="header">
-  <a id="logo" href="/">
-    <img src="Logo_C_Dark.svg" />
-    <span>RHS Robotics</span>
-  </a>
-  <nav class="navbar-container">
-    <div id="menu">
-      <ul class="links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="robots.html">Robots</a></li>
-        <li><a href="sponsors.html">Sponsors</a></li>
-      </ul>
-      <a href="#menu" class="close"></a>
-    </div>
-  </nav>
+<link
+    href="https://fonts.googleapis.com/css?family=Open+Sans"
+    rel="stylesheet"
+/>
 
-  <nav>
-    <a href="#menu">Menu</a>
-  </nav>
+<header>
+    <input type="checkbox" id="burger-input" class="burger-shower" />
+    <label class="burger-menu" for="burger-input">
+        &#9776;
+        <nav id="sidebar-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/robots">Robots</a></li>
+                <li><a href="/contact">Contact</a> us</li>
+            </ul>
+        </nav>
+    </label>
+
+        <a href="/" class="div-logo">
+            <img src="logos/Logo_C_Dark.svg" alt="logo" class="logo" id="logo-small" />
+            <img src="logos/Logo_C_Dark_Horiz.svg" alt="logo" class="logo" id="logo-big" />
+        </a>
+    <div class="div-links">
+        <a href="/about" class="text">About Us</a>
+        <a href="/robots" class="text">Robots</a>
+        <a href="/contact" class="text">Contact</a>
+    </div>
+
+    <div class="overlay"></div>
 </header>
 
-<!-- <style>
-     #header {
-   -moz-align-items: center;
-   -webkit-align-items: center;
-   -ms-align-items: center;
-     align-items: center;
-     display: -moz-flex;
-     display: -webkit-flex;
-     display: -ms-flex;
-     display: flex;
-   -moz-justify-content: space-between;
-   -webkit-justify-content: space-between;
-   -ms-justify-content: space-between;
-     justify-content: space-between;
-     background: #111111;
-     color: rgba(255, 255, 255, 0.5);
-     cursor: default;
-     height: 3.25rem;
-     left: 0;
-     line-height: 3.25rem;
-     position: fixed;
-     top: 0;
-     width: 100%;
-     z-index: 10001; }
-
-     #header > .logo {
-     color: #ffffff;
-     font-size: 1rem;
-     font-weight: 600;
-     height: inherit;
-     line-height: inherit;
-     padding: 0 1.25rem;
-     text-decoration: none; }
-     #header > nav > a {
-     color: inherit;
-     display: inline-block;
-     padding: 0 0.75rem;
-     text-decoration: none; }
-     #header > nav > a:hover {
-     color: #ffffff; }
-     #header > nav > a[href="#menu"] {
-     text-decoration: none;
-   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-     #header > nav > a[href="#menu"]:before {
-   -moz-osx-font-smoothing: grayscale;
-   -webkit-font-smoothing: antialiased;
-     font-family: FontAwesome;
-     font-style: normal;
-     font-weight: normal;
-     text-transform: none !important; }
-     #header > nav > a[href="#menu"]:before {
-     content: '\f0c9';
-     margin: 0 0.5rem 0 0; }
-     #header > nav > a + a[href="#menu"]:last-child {
-     border-left: solid 1px rgba(255, 255, 255, 0.25);
-     margin-left: 0.5rem;
-     padding-left: 1.25rem; }
-     #header > nav > a:last-child {
-     padding-right: 1.25rem; }
-     @media screen and (max-width: 736px) {
-     #header > nav > a {
-     padding: 0 0.5rem; }
-     #header > nav > a + a[href="#menu"]:last-child {
-     margin-left: 0.25rem;
-     padding-left: 1rem; }
-     #header > nav > a:last-child {
-     padding-right: 1rem; } }
-     @media screen and (min-width: 700px) {
-     #header > nav > a[href="#menu"]{
-     display: none;
-     }
-
-
-     #menu {
-     position: static !important;
-     visibility: visible !important;
-     opacity: 1 !important;
-     height: 100% !important;
-     display: block !important;
-     padding: 0 0 !important;
-     transform: none !important;
-     }
-
-
-     .links{
-     padding: 0 0 !important;
-     box-shadow: none;
-     display: flex;
-     position: static;
-     flex-direction: row;
-     width: 100%;
-     height: 100%;
-     margin: 0 0 !important;
-     overflow: hidden;
-     }
-
-     #menu > ul.links > li > a{
-     border-top: none !important;
-     margin-left: 1em;
-     margin-right: 1em;
-     }
-
-     #menu > a.close {
-     display: none;
-     }
-     }
-
-     </style> -->
-
 <style>
-  @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+    header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        z-index: 10;
+        display: flex;
+        position: relative;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .logo {
+        /* width: 40px; */
+        height: 40px;
+        text-align: left;
+    }
+    .text {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: all ease-in 0.1s;
+        font-family: "Open Sans", sans-serif;
+    }
+    .text:hover {
+        color: var(--text-color-hover);
+        cursor: pointer;
+    }
+    .div-links {
+        display: flex;
+        width: 60vw;
+        justify-content: flex-end;
+        z-index: 3;
+    }
+    .burger-menu {
+        cursor: pointer;
+        font-size: 24px;
+        color: var(--text-color);
+        display: none;
+        padding-left: 0;
+        /* margin-left: 5vw; */
+    }
+    .burger-menu:hover {
+        color: var(--text-color-hover);
+    }
+    .burger-menu #sidebar-menu {
+        visibility: hidden;
+        text-rendering: geometricPrecision;
+        position: fixed;
+        top: 0;
+        left: -40%;
+        width: /* 10em */ 40%;
+        /* background: red; */
+        height: 100%;
+        transition: 0.3s;
+    }
+    @media only screen and (max-width: 768px) {
+        .div-links {
+            display: none;
+        }
+        .burger-menu {
+            display: flex;
+        }
+    }
+    #burger-input {
+        display: none !important;
+    }
 
-  header {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    background: #211c1e;
-    color: #dddde3;
-    position: sticky;
-    height: 3.25rem;
-    left: 0;
-    top: 0;
-    width: 100%;
-    line-height: 3.25rem;
-    z-index: 10001;
-  }
+    #burger-input:checked + .burger-menu #sidebar-menu {
+        visibility: visible;
+        left: 0;
+    }
+    #burger-input:checked ~ .overlay {
+        visibility: visible;
+        opacity: 0.6;
+    }
+    .burger-menu::before {
+        display: none;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+            opacity 0.35s,
+            visibility 0.35s,
+            height 0.35s;
+        overflow: hidden;
+        background: black;
+        z-index: -1;
+    }
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    margin-bottom: 0;
-  }
+    #sidebar-menu ul li {
+        color: var(--text-color);
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-  li,
-  a {
-    color: #dddde3;
-    /* Platinum Text color*/
-    text-decoration: none;
-    list-style-type: none;
-    position: static;
-    padding-left: 0;
-    padding-right: 0;
-  }
+    #sidebar-menu ul {
+        padding: 0;
+        margin-left: 5vw;
+        margin-top: 2em;
+    }
 
-  li > a {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
+    #logo-small{
+        display: none;
+    }
 
-  #logo {
-    display: inline;
-    color: #025d03;
-    font-size: 2rem;
-    font-weight: 600;
-    height: inherit;
-    line-height: 100%;
-    padding: 0 1.25rem;
-    text-decoration: none;
-  }
+    @media only screen and (max-width: 768px) {
+        #logo-small{
+            display: inline;
+        }
 
-  #logo img {
-    vertical-align: middle;
-    height: 100%;
-  }
+        #logo-big{
+            display: none;
+        }
 
-  #logo span {
-    vertical-align: middle;
-  }
+    }
 </style>

@@ -1,121 +1,87 @@
 <script>
-  import Header from "$lib/Header.svelte";
-  import Footer from "$lib/Footer.svelte";
-  import CarouselSection from "$lib/CarouselSection.svelte";
-  import Banner from "$lib/Banner.svelte";
+    import Header from "$lib/Header.svelte";
+    import Footer from "$lib/Footer.svelte";
+    import CarouselSection from "$lib/CarouselSection.svelte";
+    import Welcome from "../lib/Welcome.svelte";
+    import SideBySide from "../lib/SideBySide.svelte";
+    import Tabs from "../lib/tabs/Tabs.svelte";
+    import Sponsors from "../lib/Sponsors.svelte";
+    import Image from "../lib/Image.svelte";
 
-  let count = 0;
+    let count = 0;
+
+    let items = [
+        { label: "Student", value: 1 },
+        { label: "Sponsor", value: 2 },
+        { label: "Coach", value: 3 },
+    ];
 </script>
 
 <svelte:head>
-  <title>RHS Robotics</title>
+    <title>RHS Robotics Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
-<Banner />
+<!-- <Banner /> -->
 
 <div id="main">
-  <p class="content">
-    We are a robotics club from Richland High School in Richland, WA. We
-    participate in the anual
-    <a href="https://www.firstinspires.org/robotics/ftc">FIRST Tech Challenge</a
-    >, where we build robots and compete against other teams.
-  </p>
+    <Welcome />
+    <SideBySide >
+        <Image class="image"
+               slot="left"
+               alt="Our team"
+               src="https://live.staticflickr.com/65535/53467755512_a217ccb400_h.jpg"
+        />
+        <div slot="right">
+            <h1>About us</h1>
+            <p>
+                We are a <a href="https://www.firstinspires.org/robotics/ftc">
+                FIRST Tech Challenge (FTC)</a> team made up of 7
+                members from <a href="https://richland.rsd.edu/">Richland High
+                School</a>, in Eastern Washington. We design, build, program,
+                and compete robots in the FTC competition.
+            </p>
+        </div>
+    </SideBySide>
 
-  <CarouselSection />
+    <!-- <Sponsors /> -->
+    <!-- <Tabs items={items} >
+         <div slot="body1">
+         <h2>Student at Richland High School</h2>
 
-  <br />
+         <p>Come to one of our club meetings, or attend one of our events.</p>
+         </div>
 
-  <h2>Contact Us</h2>
+         <div slot="body2">
+         <h2>Potential Sponsor</h2>
 
-  <div id="contact">
-    <p>
-      Please feel free to contact us by email or Instagram message. You are also
-      welcome to look at our code on Github.
-    </p>
-    <ul>
-      <li>
-        <i class="fa-solid fa-envelope" />
-        <a href="mailto:contact@rhs-robotics.com">contact@rhs-robotics.com</a>
-      </li>
-      <li>
-        <i class="fa-brands fa-instagram" />
-        <a href="https://www.instagram.com/rhs_robotics.club/"
-          >@rhs_robotics.club</a
-        >
-      </li>
-      <li>
-        <i class="fa-brands fa-github" />
-        <a href="https://github.com/Richland-HS-Robotics"
-          >Richland-HS-Robotics</a
-        >
-      </li>
-      <li>
-        <i class="fa-solid fa-location-dot" />
-        <a href="https://goo.gl/maps/rfdSa5RVQFdTAzDY7"
-          >930 Long Ave, Room 1070, Richland, WA 99352</a
-        >
-      </li>
-    </ul>
-  </div>
+         <p> You can donate to us at our <a
+         href="https://secure.givelively.org/donate/washington-first-robotics/tyler-bartlett-3">Donation
+         Page</a>, or email us about it at <a
+         href="mailto:contact@rhs-robotics.com">contact@rhs-robotics.com</a>
+         </p>
 
-  <div id="aboutFirst">
-    <img
-      width="25%"
-      src="FIRST_logos/FIRSTTech_iconHorz_RGB.png"
-      alt="FIRST Centerstage logo"
-    /> <br />
-    <p class="content">
-      Our club participates in the <em>FIRST</em> Tech Challenge, a competitions
-      where teams of up to 15 members build a robot and compete with it.
-    </p>
+         <br/>
 
-    <a class="button" href="https://www.firstinspires.org/robotics/ftc"
-      >Learn More</a
-    >
+         <p> Your donation would help us pay our team fees, buy necessary
+         robot parts, cover transportation costs, and be prepared for any
+         other unexpected costs. </p>
 
-    <button>Learn More</button>
-  </div>
+         <br/>
+
+         <p> To thank you we would love to put your name or logo on our
+         robot, robot cart, and portfolio. </p>
+
+         </div>
+
+         <div slot="body3">
+         <h2>Potential Coach</h2>
+
+         <p> We are always looking for more coaches and mentors. Contact us
+         at <a
+         href="mailto:contact@rhs-robotics.com">contact@rhs-robotics.com</a>
+         </p>
+
+         </div>
+         </Tabs> -->
 </div>
-
-<style>
-  #main {
-    width: 70%;
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-  }
-
-  p.content {
-    text-align: left;
-    max-width: 38em;
-    margin: 0 auto;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    /* padding-right: 10em; */
-  }
-
-  #contact {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  #contact ul {
-    list-style: none;
-    text-align: left;
-    font-size: 1.3em;
-  }
-  #contact > ul > li > i {
-    font-size: 1.5em;
-    vertical-align: middle;
-  }
-  #contact p {
-    text-align: left;
-    max-width: 30em;
-    margin-top: 3em;
-  }
-
-  a.button {
-    appearance: button;
-    text-decoration: none;
-  }
-</style>
