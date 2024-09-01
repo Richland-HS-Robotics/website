@@ -8,7 +8,7 @@
         <h1>Richland Robotics</h1>
         <p>
             We design, build, program, and compete robots for the
-            <a href="https://www.firstinspires.org/robotics/ftc"> <em>FIRST</em> Tech Challenge</a>.
+            <a href="https://www.firstinspires.org/robotics/ftc"> FIRST Tech Challenge</a>.
         </p>
         <!-- <button class="button">Learn more</button> -->
     </div>

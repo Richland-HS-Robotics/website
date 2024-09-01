@@ -36,7 +36,7 @@
             <h1>About us</h1>
             <p>
                 We are a <a href="https://www.firstinspires.org/robotics/ftc">
-                <em>FIRST</em> Tech Challenge (FTC)</a> team made up of 7
+                FIRST Tech Challenge (FTC)</a> team made up of 7
                 members from <a href="https://richland.rsd.edu/">Richland High
                 School</a>, in Eastern Washington. We design, build, program,
                 and compete robots in the FTC competition.
