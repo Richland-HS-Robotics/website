@@ -3,9 +3,10 @@
     import Footer from "$lib/Footer.svelte";
     import CarouselSection from "$lib/CarouselSection.svelte";
     import Welcome from "../lib/Welcome.svelte";
-    import About from "../lib/AboutHome.svelte";
+    import SideBySide from "../lib/SideBySide.svelte";
     import Tabs from "../lib/tabs/Tabs.svelte";
     import Sponsors from "../lib/Sponsors.svelte";
+    import Image from "../lib/Image.svelte";
 
     let count = 0;
 
@@ -25,7 +26,21 @@
 
 <div id="main">
     <Welcome />
-    <About />
+    <SideBySide >
+        <Image class="image"
+               slot="left"
+               alt="Our team"
+               src="https://live.staticflickr.com/65535/53468982674_63a3e7f0de_b.jpg"
+        />
+        <div slot="right">
+            <h1>About us</h1>
+            <p>
+                We are a FIRST Tech Challenge (FTC) team made up of 7 members from
+                Richland High School, in Eastern Washington. We design, build,
+                program, and compete robots in the FTC competition.
+            </p>
+        </div>
+    </SideBySide>
 
     <Sponsors />
     <Tabs items={items} >
