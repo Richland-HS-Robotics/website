@@ -2,7 +2,7 @@
 <div id="container">
   <div class="card">
     <div class="heading-div">
-      <span class="fa-regular fa-envelope icon"></span>
+      <span class="fa-regular fa-envelope icon" id="icons"></span>
       <span class="heading">Email us</span>
     </div>
 
@@ -13,7 +13,7 @@
   <div class="card">
 
     <div class="heading-div">
-      <span class="fa-brands fa-instagram icon"></span>
+      <span class="fa-brands fa-instagram icon"  id="icons"></span>
       <span class="heading">Instagram</span>
     </div>
 
@@ -24,7 +24,7 @@
   </div>
   <div class="card">
     <div class="heading-div">
-      <span class="fa-brands fa-github icon"></span>
+      <span class="fa-brands fa-github icon" id="icons"></span>
       <span class="heading">Github</span>
     </div>
 
@@ -35,7 +35,7 @@
   </div>
   <div class="card">
     <div class="heading-div">
-      <span class="fa-solid fa-location-dot icon"></span>
+      <span class="fa-solid fa-location-dot icon" id="icons"></span>
       <span class="heading">Address</span>
     </div>
 
@@ -58,18 +58,26 @@
 
 
 <style>
+  p{
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+  #icons{
+    margin-left: 2.5vw;
+  }
   .icon{
     color: var(--text-color);
     font-size: 40px;
-    margin-left: 5%;
     /* margin-top: 5%; */
   }
  .heading-div{
-   margin-top: 5%;
+   margin-top: 2.5vw;
    display: flex;
+   flex-direction: column;
  }
   h1 {
     padding-top: 80px;
+    padding-bottom: 50px;
   }
   #container {
     display: flex;
@@ -82,7 +90,7 @@
     transform: translateX(-1vw);
     margin-left: 1vw;
     margin-right: 1vw;
-    height: 200px;
+    height: auto;
     border-radius: 7px;
     border: 1px solid var(--yellow);
     background-color: var(--secondary-bg-color);
@@ -93,18 +101,19 @@
     /* margin-left: auto;
        margin-right: 25%; */
     display: block;
-    margin: 0 auto;
-
     color: var(--text-color);
+    margin-left: 2.5vw;
+    margin-top: 30px;
   }
   .contact{
     color: var(--text-color);
-    font-size: 24px;
-    text-align: center;
+    font-size: 16px;
     width: 100%;
     display: block;
     margin-top: 5%;
-    /* margin-left: 10%; */
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vw;
+    max-width: calc(90vw / 4 - 7vw);
   }
   @media screen and (max-width: 736px) {
     #container{
@@ -114,6 +123,20 @@
       width: 86vw;
       margin-bottom: 4vw;
       margin-top: 4vw;
+    }
+    .contact{
+      margin-left: 5vw;
+      max-width: 81vw;
+      margin-bottom: 5vw;
+    }
+    #icons{
+      margin-left: 5vw;
+    }
+    .heading{
+      margin-left: 5vw;
+    }
+    p{
+      padding-bottom: 25px;
     }
   }
 </style>
