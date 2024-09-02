@@ -4,6 +4,12 @@
 </script>
 
 
+<svelte:head>
+    <title>Richland Robotics - Robots</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</svelte:head>
+
+
 <h1>Our robots</h1>
 
 <SideBySide>

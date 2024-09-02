@@ -1,3 +1,10 @@
+
+<svelte:head>
+    <title>Richland Robotics - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</svelte:head>
+
+
 <svg id="grey" width="50vw" height="50vw">
   <circle cx="25vw" cy="25vw" r="25vw" fill="#4e5565" />
 </svg>
