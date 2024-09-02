@@ -4,7 +4,7 @@
 </script>
 
 
-<h1>Our Robots</h1>
+<h1>Our robots</h1>
 
 <SideBySide>
     <Image slot="right"
