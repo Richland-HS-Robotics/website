@@ -16,3 +16,8 @@
 <p> Also check us out at FTCScout: <a
   href="https://ftcscout.org/teams/15010">https://ftcscout.org/teams/15010</a>
   </p>
+
+
+  <p>You can view the code for this website at <a
+  href="https://github.com/Richland-HS-Robotics/website">https://github.com/Richland-HS-Robotics/website</a>
+  </p>
