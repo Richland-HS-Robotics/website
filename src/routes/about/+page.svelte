@@ -2,6 +2,10 @@
  const numMembers = 8;
 </script>
 
+<svelte:head>
+    <title>Richland Robotics - About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</svelte:head>
 
 <h1>About us</h1>
 

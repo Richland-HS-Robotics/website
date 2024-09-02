@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-    <title>RHS Robotics Homepage</title>
+    <title>Richland Robotics - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
