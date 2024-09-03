@@ -74,11 +74,6 @@
     <div class="flex-right">
         <div class="text-container" id="right-text">
             <p id="robot-text">
-                Our junior team #18429 built a robot for the 2022-2023 PowerPlay
-                challenge and outperformed the main team. They achieved 9th
-                place in the qualification matches and were picked by team
-                #11990 RUN KANO for the playoffs. The alliance won the semifinal
-                but lost in the finals to teams #8099 and #19589.
             </p>
         </div>
         <img
