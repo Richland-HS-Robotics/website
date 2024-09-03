@@ -141,7 +141,7 @@ body,
 input,
 select,
 textarea {
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.65;
