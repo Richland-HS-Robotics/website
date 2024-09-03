@@ -1,7 +1,6 @@
 <script>
     import Header from "$lib/Header.svelte";
     import Footer from "$lib/Footer.svelte";
-    import CarouselSection from "$lib/CarouselSection.svelte";
     import Welcome from "../lib/Welcome.svelte";
     import SideBySide from "../lib/SideBySide.svelte";
     import Tabs from "../lib/tabs/Tabs.svelte";
