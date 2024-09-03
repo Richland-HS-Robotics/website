@@ -1,12 +1,13 @@
 <script>
     import Header from "$lib/Header.svelte";
     import Footer from "$lib/Footer.svelte";
-    import CarouselSection from "$lib/CarouselSection.svelte";
     import Welcome from "../lib/Welcome.svelte";
     import SideBySide from "../lib/SideBySide.svelte";
     import Tabs from "../lib/tabs/Tabs.svelte";
     import Sponsors from "../lib/Sponsors.svelte";
     import Image from "../lib/Image.svelte";
+
+    import teamPicture from "$lib/../assets/Team-picture.jpg?as=run";
 
     let count = 0;
 
@@ -30,7 +31,7 @@
         <Image class="image"
                slot="left"
                alt="Our team"
-               src="https://live.staticflickr.com/65535/53467755512_a217ccb400_h.jpg"
+               src="{teamPicture}"
         />
         <div slot="right">
             <h1>About us</h1>

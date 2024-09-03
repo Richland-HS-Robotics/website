@@ -1,3 +1,10 @@
+<script>
+    import Img from "@zerodevx/svelte-img";
+    import team_pic from "$lib/../assets/Team-picture.jpg?as=run";
+    import robot_render from "$lib/../assets/Robot_render.png?as=run";
+
+</script>
+
 <link
     href="https://fonts.googleapis.com/css?family=Open+Sans"
     rel="stylesheet"
@@ -13,7 +20,7 @@
         <!-- <button class="button">Learn more</button> -->
     </div>
     <div class="image">
-        <img src="Robot_render.png" alt="Our robot" class="robot" />
+        <Img src={robot_render} alt="Our robot" class="robot" />
     </div>
     <svg width="50vw" height="50vw">
         <circle cx="25vw" cy="25vw" r="25vw" fill="#4e5565" />
@@ -57,10 +64,13 @@
         width: 60vw;
         margin-right: 5vw;
         z-index: 2;
+        /* box-shadow: 0 0 8px 8px var(--bg-color) inset; */
     }
-    .robot {
+    :global(.robot) {
         width: 100%;
+        height: auto;
         margin-top: 100px;
+        background: none !important;
     }
     @media only screen and (max-width: 768px) {
         .image {

@@ -1,6 +1,11 @@
 <script>
-    import SideBySide from "$lib/SideBySide.svelte";
-    import Image from "$lib/Image.svelte";
+ import SideBySide from "$lib/SideBySide.svelte";
+ import Image from "$lib/Image.svelte";
+
+ import centerstage from "$lib/../assets/robots/robot_hang.jpg?as=run";
+ import powerplay_gold from "$lib/../assets/robots/Gold-team-powerplay.png?as=run"
+ import powerplay_green from "$lib/../assets/robots/Green-team-powerplay.jpg?as=run"
+ import freight_frenzy from "$lib/../assets/robots/Green-team-freight-frenzy.jpg?as=run"
 </script>
 
 <svelte:head>
@@ -86,10 +91,9 @@
 
 <!--
 <SideBySide>
-    <Image
-        slot="right"
-        src="/robot_hang.jpg"
-        alt="Our Gold Team Centerstage Robot"
+    <Image slot="right"
+           src="{centerstage}"
+           alt="Our Gold Team Centerstage Robot"
     />
 
     <div slot="left">
@@ -132,10 +136,9 @@
 </SideBySide>
 
 <SideBySide>
-    <Image
-        slot="left"
-        src="/robots/Gold-team-powerplay.png"
-        alt="Our gold team powerplay robot"
+    <Image slot="left"
+           src="{powerplay_gold}"
+           alt="Our gold team powerplay robot"
     />
     <div slot="right">
         <h2>POWERPLAY - 18249</h2>
@@ -170,10 +173,9 @@
 <br />
 
 <SideBySide>
-    <Image
-        slot="right"
-        src="/robots/Green-team-powerplay.jpg"
-        alt="Our green team powerplay robot"
+    <Image slot="right"
+           src="{powerplay_green}"
+           alt="Our green team powerplay robot"
     />
     <div slot="left">
         <h2>POWERPLAY - 15010</h2>
@@ -204,10 +206,9 @@
 <br />
 
 <SideBySide>
-    <Image
-        slot="left"
-        src="/robots/Green-team-freight-frenzy.jpg"
-        alt="Our green team freight frenzy robot"
+    <Image slot="left"
+           src="{freight_frenzy}"
+           alt="Our green team freight frenzy robot"
     />
     <div slot="right">
         <h2>Freight Frenzy - 15010</h2>
