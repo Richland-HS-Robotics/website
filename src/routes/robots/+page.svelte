@@ -1,6 +1,7 @@
 <script>
  import SideBySide from "$lib/SideBySide.svelte";
  import Image from "$lib/Image.svelte";
+ import Img from '@zerodevx/svelte-img';
 
  import centerstage from "$lib/../assets/robots/robot_hang.jpg?as=run";
  import powerplay_gold from "$lib/../assets/robots/Gold-team-powerplay.png?as=run"
@@ -18,10 +19,10 @@
 <div class="large-card">
     <h2 id="robot">CenterStage - 15010</h2>
     <div class="flex">
-        <img
-            src="robot_hang.jpg"
+        <Img
+            src={centerstage}
             alt="Gold Team Centerstage robot"
-            class="image"
+            class="image-specific-class"
         />
         <div class="text-container">
             <p id="robot-text">
@@ -47,10 +48,10 @@
                 but lost in the finals to teams #8099 and #19589.
             </p>
         </div>
-        <img
-            src="/robots/Gold-team-powerplay.png"
+        <Img
+            src={powerplay_gold}
             alt="Gold Team PowerPlay robot"
-            class="image-right"
+            class="image-specific-class-right"
         />
     </div>
 </div>
@@ -58,10 +59,10 @@
 <div class="large-card">
     <h2 id="robot">PowerPlay - 15010</h2>
     <div class="flex">
-        <img
-            src="/robots/Green-team-powerplay.jpg"
+        <Img
+            src="{powerplay_green}"
             alt="Green Team PowerPlay robot"
-            class="image"
+            class="image-specific-class"
         />
         <div class="text-container">
             <p id="robot-text">
@@ -81,10 +82,10 @@
             <p id="robot-text">
             </p>
         </div>
-        <img
-            src="/robots/Green-team-freight-frenzy.jpg"
+        <Img
+            src="{freight_frenzy}"
             alt="Green Team Freight Frenzy robot"
-            class="image-right"
+            class="image-specific-class-right"
         />
     </div>
 </div>
@@ -264,7 +265,7 @@
         display: flex;
         justify-content: flex-end;
     }
-    .image {
+    :global(.image-specific-class) {
         width: 20vw;
         height: auto;
         border-radius: 7px;
@@ -273,7 +274,7 @@
         margin-right: 2.5vw;
         margin-bottom: 2.5vw;
     }
-    .image-right {
+    :global(.image-specific-class-right) {
         width: 20vw;
         height: auto;
         border-radius: 7px;
@@ -312,10 +313,10 @@
     .flex-right{
         flex-direction: column-reverse;
     }
-    .image{
+    .image-specific-class{
         width: 80vw;
     }
-    .image-right{
+    .image-specific-class-right{
         width: 80vw;
         margin: 0;
     }
