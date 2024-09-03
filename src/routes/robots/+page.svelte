@@ -1,12 +1,12 @@
 <script>
- import SideBySide from "$lib/SideBySide.svelte";
- import Image from "$lib/Image.svelte";
- import Img from '@zerodevx/svelte-img';
+    import SideBySide from "$lib/SideBySide.svelte";
+    import Image from "$lib/Image.svelte";
+    import Img from "@zerodevx/svelte-img";
 
- import centerstage from "$lib/../assets/robots/robot_hang.jpg?as=run";
- import powerplay_gold from "$lib/../assets/robots/Gold-team-powerplay.png?as=run"
- import powerplay_green from "$lib/../assets/robots/Green-team-powerplay.jpg?as=run"
- import freight_frenzy from "$lib/../assets/robots/Green-team-freight-frenzy.jpg?as=run"
+    import centerstage from "$lib/../assets/robots/robot_hang.jpg?as=run";
+    import powerplay_gold from "$lib/../assets/robots/Gold-team-powerplay.png?as=run";
+    import powerplay_green from "$lib/../assets/robots/Green-team-powerplay.jpg?as=run";
+    import freight_frenzy from "$lib/../assets/robots/Green-team-freight-frenzy.jpg?as=run";
 </script>
 
 <svelte:head>
@@ -73,7 +73,7 @@
     <h2 id="robot">PowerPlay - 15010</h2>
     <div class="flex">
         <Img
-            src="{powerplay_green}"
+            src={powerplay_green}
             alt="Green Team PowerPlay robot"
             class="image-specific-class"
         />
@@ -95,7 +95,7 @@
             <p id="robot-text"></p>
         </div>
         <Img
-            src="{freight_frenzy}"
+            src={freight_frenzy}
             alt="Green Team Freight Frenzy robot"
             class="image-specific-class-right"
         />
@@ -374,10 +374,34 @@
         .flex-right {
             flex-direction: column-reverse;
         }
-        .image {
+        .text-container {
+            width: 80vw;
+            margin-top: 25px;
+            margin-bottom: 2.5vw;
+        }
+
+        #robot {
+            font-size: 40px;
+            max-width: 80vw;
+            text-align: left;
+            margin-left: 5vw;
+        }
+        .large-card,
+        .large-card-right {
+            width: 90vw;
+            margin-left: 0;
+        }
+        .flex,
+        .flex-right {
+            flex-direction: column;
+        }
+        .flex-right {
+            flex-direction: column-reverse;
+        }
+        :global(.image-specific-class) {
             width: 80vw;
         }
-        .image-right {
+        :global(.image-specific-class-right) {
             width: 80vw;
             margin: 0;
         }
@@ -386,34 +410,8 @@
             margin-top: 25px;
             margin-bottom: 2.5vw;
         }
-
-        #robot{
-            font-size: 40px;
-            max-width: 80vw;
-            text-align: left;
-            margin-left: 5vw;
+        #green, #yellow, #grey, #black, #bottom{
+            display: none;
         }
-        .large-card, .large-card-right{
-            width: 90vw;
-            margin-left: 0;
-        }
-        .flex, .flex-right{
-            flex-direction: column;
-        }
-        .flex-right{
-            flex-direction: column-reverse;
-        }
-        .image-specific-class{
-            width: 80vw;
-        }
-        .image-specific-class-right{
-            width: 80vw;
-            margin: 0;
-        }
-        .text-container{
-            width: 80vw;
-            margin-top: 25px;
-            margin-bottom: 2.5vw;
-        }
-  }
+    }
 </style>
