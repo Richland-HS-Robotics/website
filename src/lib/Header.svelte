@@ -1,3 +1,34 @@
+<script>
+  let menuOpen = false;
+
+  let menuButtons;
+  let burgerInput;
+
+  function toggleMenu() {
+    menuOpen = !menuOpen;
+  }
+
+  function closeMenu() {
+    menuOpen = false;
+    burgerInput.checked = false; // Add this line to uncheck the checkbox
+  }
+
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    menuButtons = document.querySelectorAll("#sidebar-menu ul li a");
+    burgerInput = document.getElementById("burger-input");
+
+    menuButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        burgerInput.checked = false;
+      });
+    });
+
+    // Add event listener to window scroll event
+    window.addEventListener('scroll', () => closeMenu()); // Pass the closeMenu function as a reference
+  });
+</script>
 <link
     href="https://fonts.googleapis.com/css?family=Open+Sans"
     rel="stylesheet"
@@ -17,10 +48,20 @@
         </nav>
     </label>
 
-        <a href="/" class="div-logo">
-            <img src="logos/Logo_C_Dark.svg" alt="logo" class="logo" id="logo-small" />
-            <img src="logos/Logo_C_Dark_Horiz.svg" alt="logo" class="logo" id="logo-big" />
-        </a>
+    <a href="/" class="div-logo">
+        <img
+            src="logos/Logo_C_Dark.svg"
+            alt="logo"
+            class="logo"
+            id="logo-small"
+        />
+        <img
+            src="logos/Logo_C_Dark_Horiz.svg"
+            alt="logo"
+            class="logo"
+            id="logo-big"
+        />
+    </a>
     <div class="div-links">
         <a href="/about" class="text">About Us</a>
         <a href="/robots" class="text">Robots</a>
@@ -82,7 +123,7 @@
         text-rendering: geometricPrecision;
         position: fixed;
         top: 0;
-        left: -40%;
+        left: -95vw;
         width: /* 10em */ 40%;
         /* background: red; */
         height: 100%;
@@ -132,27 +173,31 @@
         color: var(--text-color);
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding-top: 25px;
+        font-size: 40px;
+        width: 95vw;
     }
 
     #sidebar-menu ul {
         padding: 0;
-        margin-left: 5vw;
-        margin-top: 2em;
+        padding-left: 5vw;
+        margin-top: 70px;
+        background-color: var(--bg-color);
+        width: 95vw;
+        height: 100vh;
     }
 
-    #logo-small{
+    #logo-small {
         display: none;
     }
 
     @media only screen and (max-width: 768px) {
-        #logo-small{
+        #logo-small {
             display: inline;
         }
 
-        #logo-big{
+        #logo-big {
             display: none;
         }
-
     }
 </style>

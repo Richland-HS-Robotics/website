@@ -104,6 +104,8 @@
     padding-bottom: 50px;
     z-index: 2;
     position: relative;
+    font-size: 60px;
+    font-weight: bold;
   }
   #container {
     display: flex;

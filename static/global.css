@@ -149,7 +149,7 @@ textarea {
 
 a {
   transition: color 0.2s ease-in-out;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
