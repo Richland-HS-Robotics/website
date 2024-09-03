@@ -13,9 +13,22 @@
     <title>Richland Robotics - Robots</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
-
 <h1 id="robots">Meet our robots</h1>
-
+<svg id="green" width="50vw" height="50vw">
+    <circle cx="25vw" cy="25vw" r="25vw" fill="var(--green)" />
+</svg>
+<svg id="black" width="50vw" height="50vw">
+    <circle cx="25vw" cy="25vw" r="25vw" fill="black" />
+</svg>
+<svg id="yellow" width="50vw" height="50vw">
+    <circle cx="25vw" cy="25vw" r="25vw" fill="var(--yellow)" />
+</svg>
+<svg id="grey" width="50vw" height="50vw">
+    <circle cx="25vw" cy="25vw" r="25vw" fill="#4e5565" />
+</svg>
+<svg id="bottom" width="50vw" height="50vw">
+    <circle cx="25vw" cy="25vw" r="25vw" fill="var(--green)" />
+</svg>
 <div class="large-card">
     <h2 id="robot">CenterStage - 15010</h2>
     <div class="flex">
@@ -79,8 +92,7 @@
     <h2 id="robot">Freight Frenzy - 15010</h2>
     <div class="flex-right">
         <div class="text-container" id="right-text">
-            <p id="robot-text">
-            </p>
+            <p id="robot-text"></p>
         </div>
         <Img
             src="{freight_frenzy}"
@@ -223,11 +235,53 @@
 </SideBySide>-->
 
 <style>
+    #green {
+        position: absolute;
+        top: -25px;
+        left: -15vw;
+        z-index: 0;
+        filter: blur(250px);
+        opacity: 0.25;
+    }
+    #yellow {
+        position: absolute;
+        top: 1200px;
+        left: 5vw;
+        z-index: 0;
+        filter: blur(200px);
+        opacity: 0.15;
+    }
+    #black {
+        position: absolute;
+        top: 650px;
+        left: 55vw;
+        z-index: 0;
+        filter: blur(100px);
+        opacity: 0.25;
+    }
+    #grey {
+        position: absolute;
+        top: 1800px;
+        left: 45vw;
+        z-index: 0;
+        filter: blur(125px);
+        opacity: 0.25;
+    }
+    #bottom {
+        position: absolute;
+        top: 2100px;
+        left: -15vw;
+        z-index: 0;
+        filter: blur(75px);
+        opacity: 0.25;
+    }
     #robots {
         padding-top: 80px;
         padding-bottom: 50px;
+        position: relative;
         font-size: 60px;
         font-weight: bold;
+        z-index: 1;
     }
     .large-card {
         width: 75vw;
@@ -236,6 +290,8 @@
         background-color: var(--secondary-bg-color);
         box-shadow: 0 0 15px var(--secondary-bg-color);
         margin-bottom: 75px;
+        z-index: 1;
+        position: relative;
     }
     .large-card-right {
         width: 75vw;
@@ -245,6 +301,8 @@
         box-shadow: 0 0 15px var(--secondary-bg-color);
         margin-left: 15vw;
         margin-bottom: 75px;
+        z-index: 1;
+        position: relative;
     }
     #robot {
         text-align: center;
@@ -292,38 +350,70 @@
         flex-direction: column;
         justify-content: center;
     }
-  @media screen and (max-width: 736px) {
-    .flex, .flex-right{
-        margin-right: 5vw;
-        margin-left: 5vw;
-    }
-    #robot{
-        font-size: 40px;
-        max-width: 80vw;
-        text-align: left;
-        margin-left: 5vw;
-    }
-    .large-card, .large-card-right{
-        width: 90vw;
-        margin-left: 0;
-    }
-    .flex, .flex-right{
-        flex-direction: column;
-    }
-    .flex-right{
-        flex-direction: column-reverse;
-    }
-    .image-specific-class{
-        width: 80vw;
-    }
-    .image-specific-class-right{
-        width: 80vw;
-        margin: 0;
-    }
-    .text-container{
-        width: 80vw;
-        margin-top: 25px;
-        margin-bottom: 2.5vw;
-    }
+    @media screen and (max-width: 736px) {
+        .flex,
+        .flex-right {
+            margin-right: 5vw;
+            margin-left: 5vw;
+        }
+        #robot {
+            font-size: 40px;
+            max-width: 80vw;
+            text-align: left;
+            margin-left: 5vw;
+        }
+        .large-card,
+        .large-card-right {
+            width: 90vw;
+            margin-left: 0;
+        }
+        .flex,
+        .flex-right {
+            flex-direction: column;
+        }
+        .flex-right {
+            flex-direction: column-reverse;
+        }
+        .image {
+            width: 80vw;
+        }
+        .image-right {
+            width: 80vw;
+            margin: 0;
+        }
+        .text-container {
+            width: 80vw;
+            margin-top: 25px;
+            margin-bottom: 2.5vw;
+        }
+
+        #robot{
+            font-size: 40px;
+            max-width: 80vw;
+            text-align: left;
+            margin-left: 5vw;
+        }
+        .large-card, .large-card-right{
+            width: 90vw;
+            margin-left: 0;
+        }
+        .flex, .flex-right{
+            flex-direction: column;
+        }
+        .flex-right{
+            flex-direction: column-reverse;
+        }
+        .image-specific-class{
+            width: 80vw;
+        }
+        .image-specific-class-right{
+            width: 80vw;
+            margin: 0;
+        }
+        .text-container{
+            width: 80vw;
+            margin-top: 25px;
+            margin-bottom: 2.5vw;
+        }
   }
 </style>
