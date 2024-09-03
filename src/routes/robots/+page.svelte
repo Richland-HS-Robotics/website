@@ -60,10 +60,10 @@
         />
         <div class="text-container">
             <p id="robot-text">
-                Our robot for the 2022-2023 POWERPLAY challenge
-                faced electrical and connection issues. We performed decently in
-                the first two league meets but struggled in the interleague
-                tournament, finishing in 14th place.
+                Our robot for the 2022-2023 POWERPLAY challenge faced electrical
+                and connection issues. We performed decently in the first two
+                league meets but struggled in the interleague tournament,
+                finishing in 14th place.
             </p>
         </div>
     </div>
@@ -72,7 +72,7 @@
 <div class="large-card-right">
     <h2 id="robot">Freight Frenzy - 15010</h2>
     <div class="flex-right">
-        <div class="text-container">
+        <div class="text-container" id="right-text">
             <p id="robot-text">
                 Our junior team #18429 built a robot for the 2022-2023 PowerPlay
                 challenge and outperformed the main team. They achieved 9th
@@ -88,6 +88,7 @@
         />
     </div>
 </div>
+
 <!--
 <SideBySide>
     <Image
@@ -294,4 +295,38 @@
         flex-direction: column;
         justify-content: center;
     }
+  @media screen and (max-width: 736px) {
+    .flex, .flex-right{
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    #robot{
+        font-size: 40px;
+        max-width: 80vw;
+        text-align: left;
+        margin-left: 5vw;
+    }
+    .large-card, .large-card-right{
+        width: 90vw;
+        margin-left: 0;
+    }
+    .flex, .flex-right{
+        flex-direction: column;
+    }
+    .flex-right{
+        flex-direction: column-reverse;
+    }
+    .image{
+        width: 80vw;
+    }
+    .image-right{
+        width: 80vw;
+        margin: 0;
+    }
+    .text-container{
+        width: 80vw;
+        margin-top: 25px;
+        margin-bottom: 2.5vw;
+    }
+  }
 </style>
