@@ -30,7 +30,7 @@
     <SideBySide>
         <Image class="image" slot="left" alt="Our team" src={teamPicture} />
         <div slot="right">
-            <h1>About us</h1>
+            <h2>About us</h2>
             <p>
                 We are a <a href="https://www.firstinspires.org/robotics/ftc">
                     FIRST Tech Challenge (FTC)</a
@@ -46,14 +46,14 @@
     <h1 id="if">If you are a...</h1>
     <div class="cards">
         <div class="card">
-            <h2>Student at Richland High School</h2>
+            <h3>Student at Richland High School</h3>
 
             <p id="card-text">
                 Come to one of our club meetings, or attend one of our events.
             </p>
         </div>
         <div class="card">
-            <h2>Potential Sponsor</h2>
+            <h3>Potential Sponsor</h3>
 
             <p id="card-text">
                 You can donate to us at our <a
@@ -78,7 +78,7 @@
             </p> -->
         </div>
         <div class="card">
-            <h2>Potential Coach</h2>
+            <h3>Potential Coach</h3>
 
             <p id="card-text">
                 We are always looking for more coaches and mentors. Contact us
@@ -147,12 +147,14 @@
         margin-left: 1.25vw;
         transform: translateX(-1.25vw);
     }
-    h2 {
+    h3 {
         margin-left: 1vw;
         margin-top: 25px;
+        margin-bottom: 15px;
     }
     #card-text{
         margin-left: 1vw;
+        margin-bottom: 1vw;
     }
     #if{
         font-size: 50px;
