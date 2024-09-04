@@ -47,16 +47,17 @@
     <div id="container">
         <div class="card">
             <div class="heading-div">
-                <span class="fa-brands fa-google-scholar icon" id="icons"></span>
+                <span class="fa-brands fa-google-scholar icon" id="icons"
+                ></span>
                 <span class="heading">Student</span>
             </div>
-
             <span class="contact">
                 <p>
                     Come to one of our club meetings, or attend one of our
                     events.
                 </p>
             </span>
+            <a class="button" href="/involved">Learn more</a>
         </div>
         <div class="card">
             <div class="heading-div">
@@ -75,6 +76,7 @@
                     >
                 </p>
             </span>
+            <a class="button" href="/involved">Learn more</a>
         </div>
         <div class="card">
             <div class="heading-div">
@@ -85,6 +87,7 @@
             <span class="contact">
                 <p>We are always looking for more coaches and mentors.</p>
             </span>
+            <a class="button" href="/involved">Learn more</a>
         </div>
     </div>
 
@@ -131,6 +134,19 @@
 </div>
 
 <style>
+    .button {
+        margin-bottom: 2.5vw;
+        margin-left: 2.5vw;
+        text-decoration: none;
+        color: var(--bg-color);
+        position: relative;
+        /* bottom: 2.5vw; */
+        margin-top: auto;
+        align-self: flex-start;
+    }
+    .button:hover {
+        color: var(--secondary-bg-color);
+    }
     #if {
         font-size: 50px;
         font-weight: bold;
@@ -170,11 +186,13 @@
         border: 1px solid var(--yellow);
         background-color: var(--secondary-bg-color);
         box-shadow: 0 0 15px var(--secondary-bg-color);
+        display: flex;
+        flex-direction: column;
     }
-    a{
+    a {
         text-decoration: underline;
     }
-    a:hover{
+    a:hover {
         text-decoration: none;
         color: var(--text-color-hover);
     }
@@ -193,8 +211,9 @@
         display: block;
         margin-top: 5%;
         margin-left: 2.5vw;
-        margin-bottom: 2.5vw;
+        margin-bottom: 25px;
         width: calc(90vw / 3 - 7vw);
+        flex-grow: 1;
     }
     @media screen and (max-width: 736px) {
         #container {
@@ -220,7 +239,7 @@
         p {
             padding-bottom: 25px;
         }
-        .heading-div{
+        .heading-div {
             margin-top: 5vw;
         }
     }

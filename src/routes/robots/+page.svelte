@@ -30,7 +30,7 @@
     <circle cx="25vw" cy="25vw" r="25vw" fill="var(--green)" />
 </svg>
 <div class="large-card">
-    <h2 id="robot">CenterStage - 15010</h2>
+    <h2 id="robot">CenterStage - 15010</h2>SammySkycrafts — Yesterday at 6:33 PM
     <div class="flex">
         <Img
             src={centerstage}

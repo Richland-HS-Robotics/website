@@ -362,7 +362,7 @@ button,
   white-space: nowrap;
   font-size: 20px;
   background: linear-gradient(0deg, var(--yellow-hover), var(--yellow));
-  box-shadow: 0 0 15px var(--yellow);
+  /* box-shadow: 0 0 15px var(--yellow); */
 }
 .button:hover {
   background: linear-gradient(180deg, var(--yellow-hover), var(--yellow));

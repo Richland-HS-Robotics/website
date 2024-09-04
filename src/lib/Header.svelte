@@ -44,6 +44,7 @@
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/robots">Robots</a></li>
                 <li><a href="/contact">Contact</a> us</li>
+                <li><a href="/involved">Get</a> involved</li>
             </ul>
         </nav>
     </label>
@@ -66,6 +67,7 @@
         <a href="/about" class="text">About Us</a>
         <a href="/robots" class="text">Robots</a>
         <a href="/contact" class="text">Contact</a>
+        <a href="/involved" class="text">Get involved</a>
     </div>
 
     <div class="overlay"></div>
