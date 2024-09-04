@@ -46,9 +46,5 @@
             margin-right: 0;
             order: 0;
         }
-        img{
-            width: 90vw;
-            padding-top: 50px;
-        }
     }
 </style>

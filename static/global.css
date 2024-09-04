@@ -192,7 +192,9 @@ h6 a {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 h2 {

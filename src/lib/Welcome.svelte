@@ -54,12 +54,6 @@
         display: flex;
         margin-top: -70px;
     }
-    h1 {
-        color: var(--text-color);
-    }
-    .button {
-        margin-top: 25px;
-    }
     .image {
         width: 60vw;
         margin-right: 5vw;

@@ -27,23 +27,67 @@
 
 <div id="main">
     <Welcome />
-    <SideBySide >
-        <Image class="image"
-               slot="left"
-               alt="Our team"
-               src="{teamPicture}"
-        />
+    <SideBySide>
+        <Image class="image" slot="left" alt="Our team" src={teamPicture} />
         <div slot="right">
             <h1>About us</h1>
             <p>
                 We are a <a href="https://www.firstinspires.org/robotics/ftc">
-                FIRST Tech Challenge (FTC)</a> team made up of 7
-                members from <a href="https://richland.rsd.edu/">Richland High
-                School</a>, in Eastern Washington. We design, build, program,
-                and compete robots in the FTC competition.
+                    FIRST Tech Challenge (FTC)</a
+                >
+                team made up of 7 members from
+                <a href="https://richland.rsd.edu/">Richland High School</a>, in
+                Eastern Washington. We design, build, program, and compete
+                robots in the FTC competition.
             </p>
         </div>
     </SideBySide>
+
+    <h1 id="if">If you are a...</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>Student at Richland High School</h2>
+
+            <p id="card-text">
+                Come to one of our club meetings, or attend one of our events.
+            </p>
+        </div>
+        <div class="card">
+            <h2>Potential Sponsor</h2>
+
+            <p id="card-text">
+                You can donate to us at our <a
+                    href="https://secure.givelively.org/donate/washington-first-robotics/tyler-bartlett-3"
+                    >Donation Page</a
+                >, or email us about it at
+                <a href="mailto:contact@rhs-robotics.com"
+                    >contact@rhs-robotics.com</a
+                >
+            </p>
+            <!-- <p>
+                Your donation would help us pay our team fees, buy necessary
+                robot parts, cover transportation costs, and be prepared for any
+                other unexpected costs.
+            </p> -->
+
+            <br />
+
+            <!-- <p>
+                We would love to put your name or logo on our
+                robot, robot cart, and portfolio to show our appreciation.
+            </p> -->
+        </div>
+        <div class="card">
+            <h2>Potential Coach</h2>
+
+            <p id="card-text">
+                We are always looking for more coaches and mentors. Contact us
+                at <a href="mailto:contact@rhs-robotics.com"
+                    >contact@rhs-robotics.com</a
+                >
+            </p>
+        </div>
+    </div>
 
     <!-- <Sponsors /> -->
     <!-- <Tabs items={items} >
@@ -86,3 +130,33 @@
          </div>
          </Tabs> -->
 </div>
+
+<style>
+    .cards {
+        display: flex;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .card {
+        width: 30vw;
+        background-color: var(--secondary-bg-color);
+        border-radius: 7px;
+        border: 1px solid var(--yellow);
+        box-shadow: 0 0 15px var(--secondary-bg-color);
+        margin-right: 1.25vw;
+        margin-left: 1.25vw;
+        transform: translateX(-1.25vw);
+    }
+    h2 {
+        margin-left: 1vw;
+        margin-top: 25px;
+    }
+    #card-text{
+        margin-left: 1vw;
+    }
+    #if{
+        font-size: 50px;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+</style>
