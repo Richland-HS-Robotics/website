@@ -15,7 +15,7 @@
 <div id="container">
   <div class="card">
     <div class="heading-div">
-      <span class="fa-regular fa-envelope icon" id="icons"></span>
+      <span class="fa-solid fa-envelope icon" id="icons"></span>
       <span class="heading">Email us</span>
     </div>
 
