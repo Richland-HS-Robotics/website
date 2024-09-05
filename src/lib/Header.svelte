@@ -43,8 +43,8 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/robots">Robots</a></li>
-                <li><a href="/contact">Contact</a> us</li>
-                <li><a href="/involved">Get</a> involved</li>
+                <li><a href="/contact">Contact us</a></li>
+                <li><a href="/involved">Get involved</a></li>
             </ul>
         </nav>
     </label>
