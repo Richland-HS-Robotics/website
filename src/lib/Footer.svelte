@@ -10,7 +10,7 @@
     <p class="copyright">© 2024 Richland Robotics All Rights Reserved.</p>
   </div> <!-- Close the div -->
   <div class="right"> <!-- Add this div -->
-    <a href="mailto:contact@rhs-robotics.com", class="contact"><i class="fa-regular fa-envelope"></i></a>
+    <a href="mailto:contact@rhs-robotics.com", class="contact"><i class="fa-regular fa-envelope icon"></i></a>
     <a href="https://www.instagram.com/rhs_robotics24/" class="contact" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     <a href="https://github.com/Richland-HS-Robotics" class="contact" target="_blank"><i class="fa-brands fa-github"></i></a>
     <a href="https://goo.gl/maps/rfdSa5RVQFdTAzDY7" class="contact" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
